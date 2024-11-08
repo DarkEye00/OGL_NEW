@@ -1,0 +1,362 @@
+<!DOCTYPE html>  
+<html lang="en" class="scroll-smooth h-full w-full m-0 p-0 overflow-x-hidden font-sans">
+    <head> 
+        <title>Offshore Global Logistics</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='media/offsh_icon.ico') }}" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+        <script src="{{url_for('static', filename='js/main.js')}}" defer></script>
+    </head>
+   
+    
+<body class="min-h-screen w-full bg-slate-200 overflow-clip font-sans">
+    <header class="bg-white fixed top-0 z-[50] w-full ">
+        <section class="max-w-5xl p-4 flex justify-between items-start sm:w-auto 2xl:ml-[30rem]">
+            <a href="{{url_for('index')}}">
+                <img  class="w-[140px]" src="{{url_for('static', filename='media/logo5.png' )}}" alt="logo"></a>
+            <div>
+                <button class="text-3xl md:hidden focus:outline-none" id="hamburger-button">
+                    &#9776;
+                </button>
+                <nav class="mt-3 hidden md:block space-x-5 text-base font-semibold xl:-mr-32" aria-label="main">
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1 sm:pl-5"><a href="{{url_for('About_Us')}}">About Us</a></button>
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1  sm:pl-5"><a href="{{url_for('Services')}}">Services</a></button>                                                       
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1 sm:pl-5"><a href="{{url_for('Sustainability')}}">Sustainability</a></button>                                                           
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1  sm:pl-5"><a href="#News">News</a></button>
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1  sm:pl-5"><a href="{{url_for('Careers')}}">Careers</a></button>
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1"><a href="{{url_for('Speak')}}">Speak Up</a></button>
+                </nav>
+            </div>
+
+        </section>
+
+        <!--Mobile menu-->
+        <section id="mobile-menu" class="absolute top-0 bg-green-500/90 w-full text-2xl font-medium flex-col justify-center origin-top animate-open-menu hidden">
+            <button class="text-6xl self-end px-6 ">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen items-center py-6" aria-label="mobile-menu">
+                <a href="{{url_for('index')}}" class="w-full text-center hover:opacity-80 py-3">
+                    HOME
+                </a>
+                <a href="{{url_for('About_Us')}}" class="w-full text-center  hover:opacity-80 py-3">
+                    ABOUT US
+                </a>
+                <a href="{{url_for('Services')}}" class="w-full text-center hover:opacity-80 py-3">
+                    SERVICES
+                </a>
+                <a href="{{url_for('Sustainability')}}" class="w-full text-center hover:opacity-80 py-3">
+                    SUSTAINABILITY
+                </a>
+                <a href="#" class="w-full text-center hover:opacity-80 py-3">
+                    NEWS
+                </a>
+                <a href="{{url_for('Careers')}}" class="w-full text-center hover:opacity-80 py-3">
+                    CAREERS
+                </a>
+                <a href="{{url_for('Speak')}}" class="w-full text-center hover:opacity-80 py-3">
+                    SPEAK UP
+                </a>
+
+            </nav>
+        </section>
+    </header>
+   
+    <section  class="relative h-[100vh]">
+        <div class="w-[calc(100vw-15px)] h-full absolute  -translate-x-[50%] left-[50%] ">
+            <!--overlay-->   
+            <div class="absolute top-0 left-0 w-full h-[95vh] z-20 bg-green-800/30"></div>
+            <!---->
+                <video class="object-cover pointer-events-none w-full h-[95vh] z-10" autoplay loop muted>
+                    <source src="{{url_for('static', filename='media/video.mp4') }}" type="video/mp4" /> 
+                    Your browser does not support the video tag.
+                </video> 
+        </div>   
+      <!---->
+    </section>     
+    <div class="hidden min-[320px]:block -mt-[130px] z-30 2xl:-mt-[200px]">   
+            
+        <div class="mx-5 flex flex-row row-span-3 gap-5 justify-evenly items-center border-2 relative border-green-800 border-solid p-3 text-gray-900 sm:gap-20 lg:w-auto lg:mx-10 md:w-auto md:mx-5  ">
+            <p class="auto-type text-white italic text-xl -mt-[130px] absolute left-0 pb-4 2xl:-mt-[150px]"></p>
+                <div class="bg-green-800 w-36 py-3 rounded-lg lg:w-40 text-center 2xl:w-562xl:p-6  border-2 border-green-700 shadow-2xl max-[500px]:block max-[500px]:-rotate-90 max-[500px]:-right-12 max-[500px]:top-[150px] max-[500px]:fixed max-[500px]:bg-green-800/80  max-[500px]:rounded-none  max-[500px]:w-[140px] max-[500px]:p-2">    
+                    <a  href="{{url_for('quote')}}" class="text-xl font-bold 2xl:text-3xl text-center">GET QUOTE</a>
+                </div>
+
+                <div class="bg-green-800 p-3 rounded-lg w-36 lg:w-40 text-center 2xl:p-6 2xl:w-52 border-2 border-green-700 shadow-2xl  ">    
+                    <a  href="#serv" class="text-xl font-bold 2xl:text-3xl text-center">SERVICES</a>
+                </div>
+
+                <div class="bg-green-800  rounded-lg p-3 w-36 text-center lg:w-40 2xl:p-6 2xl:w-52 border-2 border-green-700 shadow-2xl">
+                    <a href="{{url_for('Offices')}}" class="text-xl font-bold 2xl:text-3xl text-center">OFFICES</a>
+                </div>
+        </div>
+        
+    </div>
+             
+        <main>
+
+                <section id="serv" class="pb-3" data-aos="fade-up" data-aos-delay="450">
+                    
+                    <h2 class="uppercase text-3xl font-bold text-center pb-2 bg-slate-200 h-32 flex justify-center items-center 2xl:text-4xl text-gray-900 ">OUR SERVICES</h2>
+                    <a href="{{url_for('Services')}}">
+                        <div class="px-10 pt-2 flex flex-row row-span-3 justify-center items-center gap-5 lg:gap-10 2xl:gap-28 xl:justify-center 2xl:text-2xl 2xl:justify-center">
+                            <div class="-mt-10 flex justify-center w-56 h-52 rounded-xl 2xl:w-[25rem] 2xl:h-[22rem] shadow-2xl text-black hover:text-green-800 " data-aos="zoom-in-up">
+                                <img src="{{url_for('static', filename='media/Whouse.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  2xl:justify-center 2xl:w-[25rem]  2xl:h-[22rem]  object-cover">
+                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl lg:w-52 max-sm:w-52">
+                                        <p>Warehousing &<br>Distribution</p>
+                                    </div>
+ 
+                            </div>
+                            <div class="-mt-10 flex justify-center w-56 h-52 rounded-xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] shadow-2xl  text-black hover:text-green-800 max-sm:hidden" data-aos="zoom-in-up">
+                                <img src="{{url_for('static', filename='media/Air_freight.jpg')}}" class="rounded-xl shadow-2xl  transition ease-in-out delay-75 hover:translate-y-2  object-cover ">
+                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold h-auto 2xl:text-3xl 2xl:mt-36 lg:w-52 max-sm:w-52">
+                                        <p>Air<br> Freight</p>
+                                    </div>
+ 
+                            </div>
+                            
+                            <div class="-mt-10 flex justify-center w-56 h-52 rounded-xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] shadow-2xl text-black hover:text-green-800 max-sm:hidden max-md:hidden " data-aos="zoom-in-up">
+                                <img src="{{url_for('static', filename='media/ship_Freight.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
+                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold h-auto 2xl:text-3xl 2xl:mt-36 lg:w-52">
+                                        <p>Sea<br> Freight</p>
+                                    </div>
+ 
+                            </div>
+                            <div class="-mt-10 flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800 max-[520px]:hidden" data-aos="zoom-in-up">
+                                <img src="{{url_for('static', filename='media/Road.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
+                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 max-sm:w-52">
+                                        <p>Road<br> Freight</p>
+                                    </div>
+ 
+                            </div> 
+
+                        </div>
+                            
+                        <div class="px-10 flex flex-row row-span-3 justify-center items-center gap-5 lg:gap-10 xl:justify-center 2xl:gap-28-2xl mt-10 2xl:mt-16 2xl:justify-center 2xl:gap-28 " >
+                            
+                                <div class="flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800" data-aos="zoom-in-up">
+                                    <img src="{{url_for('static', filename='media/forwarding.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2 object-cover">
+                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 max-md:w-52">
+                                        <p>Freight<br> Forwarding</p>
+                                    </div> 
+                                   
+                                </div>
+                                <div class="flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800 max-[520px]:hidden" data-aos="zoom-in-up">
+                                    <img src="{{url_for('static', filename='media/Clearance.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
+                                        <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 max-md:w-52">
+                                            <p>Customs<br> Clearance</p>
+                                        </div>
+     
+                                </div>
+     
+                                <div class=" flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800 max-[375px]:hidden max-sm:hidden" data-aos="zoom-in-up">
+                                    <img src="{{url_for('static', filename='media/import.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
+                                        <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 ">
+                                            <p>Imports &<br> Exports</p>
+                                        </div>
+     
+                                </div>
+                               
+                                <div class="flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800 max-md:hidden max-[375px]:hidden max-sm:hidden" data-aos="zoom-in-up">
+                                    <img src="{{url_for('static', filename='media/cargo.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  max-w-full object-cover">
+                                        <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52">
+                                            <p>Project<br> Cargo</p>
+                                        </div>
+     
+                                </div> 
+                        </div>
+
+                        <div class="px-10 flex flex-row row-span-3 justify-center items-center gap-5 lg:gap-10 xl:justify-center 2xl:gap-28-2xl mt-10 2xl:mt-16 2xl:justify-center 2xl:gap-28 " >
+                            
+                            <div class="flex justify-center mx-0 w-56 h-52 rounded-xl 2xl:w-[25rem] 2xl:h-[22rem]  text-black hover:text-green-800 max-[520px]:hidden" data-aos="zoom-in-up">
+                                <img src="{{url_for('static', filename='media/courier.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2 object-cover">
+                                <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 max-sm:w-52">
+                                    <p>Order <br> Fulfillment</p>
+                                </div> 
+                               
+                            </div>
+                            <div class="flex justify-center w-56 h-52 rounded-xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:group-only:bg-gray-600 hover:text-green-800 max-[375px]:hidden max-sm:hidden" data-aos="zoom-in-up">
+                                <img src="{{url_for('static', filename='media/contract.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
+                                    <div class="absolute flex p-2 bottom-2 bg-gray-400/70 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52  ">
+                                        <p>Contracts<br> Management</p>
+                                    </div>
+ 
+                            </div>
+ 
+                            <div class=" flex justify-center w-56 h-52 rounded-xl  2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800" data-aos="zoom-in-up">
+                                <img src="{{url_for('static', filename='media/Whouse.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
+                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 max-sm:w-52">
+                                        <p>Cross Border<br> Trade</p>
+                                    </div>
+ 
+                            </div>
+                           
+                            <div class="flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800 max-[375px]:hidden max-md:hidden max-sm:hidden" data-aos="zoom-in-up">
+                                <img src="{{url_for('static', filename='media/others.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2 max-w-full object-cover">
+                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52">
+                                        <p>Other Logistics<br> Services</p>
+                                    </div>
+ 
+                            </div> 
+                        </div>
+                    </a>    
+                    <!---->
+                    <div class="flex justify-center items-center py-2 mt-5 2xl:py-4">
+                        <a href="{{url_for('Services')}}" class="text-center text-lg font-bold border-2 shadow-green-400 border-green-500 w-60 p-2 rounded-2xl hover:border-green-500 hover:text-green-600 2xl:text-3xl">View More</a>
+                    </div>
+                        
+                </section> 
+            <!--
+                <section class="p-5 flex justify-center">
+        
+                    <div class="2xl:w-5xl max-w-7xl" data-aos="fade-down" data-aos-delay="450">
+                        <h2 class="text-3xl font-bold py-3 text-center">INSIGHTS</h2>
+                        <div class="flex flex-row row-span-3 pb-4 justify-center items-center max-[672px]:flex-col">
+                            <div class="w-40 h-20 bg-purple-500 mt-5 shadow-2xl"></div>
+                                <div class=" my-2 flex justify-between items-center text-3xl font-bold max-[672px]:animate-pulse max-[672px]:rotate-90"> >> </div>
+                                    <div class="bg-white h-auto w-auto p-4 my-2 text-lg shadow-2xl">
+                                            Cold chain logistics is the transport of 
+                                            temperature-controlled products, such as temperature-sensitive foods and pharmaceutical products.
+                                        </div>
+                        </div>
+                        <div class="flex flex-row row-span-3 pb-4 justify-center items-center max-[672px]:flex-col-reverse">
+                            <div class="bg-white h-auto p-4 w-auto my-2 text-lg shadow-2xl">A hub and spoke model is a centralized logistics system that resembles a bicycle wheel 
+                                    with a central hub that connects multiple spokes. 
+                            </div>
+                                    <div class="flex justify-between items-center my-2 text-3xl font-bold max-[672px]:animate-pulse max-[672px]:-rotate-90"> << </div>
+                                        <div class="w-40 h-20 bg-purple-500 mt-2 shadow-2xl"></div>
+                        </div>
+                        <div class="flex flex-row row-span-3 pb-4 justify-center items-center max-[672px]:flex-col">
+                            <div class="w-44 h-20 bg-purple-500 shadow-2xl"></div>
+                                <div class="my-2 flex justify-between items-center text-3xl  font-bold max-[672px]:rotate-90 max-[672px]:animate-pulse"> >> </div>
+                                    <div class="bg-white h-auto w-auto p-4 my-2 text-lg shadow-2xl">
+                                        Warehousing services simplify supply chain management by providing enough space to store finished goods,inbound functions that prepare items for storage and outbound functions that consolidate, 
+                                        pack and ship orders accordingly.
+                                    </div>
+                        </div>
+                    
+                        <div class="flex flex-row row-span-3 pb-4 justify-center items-center max-[672px]:flex-col-reverse">
+                            <div class="bg-white h-auto p-4 w-auto mt-4 text-lg shadow-2xl">The freight forwarding process involves the flow of shipment and gods from two destinations carried out by a freight forwarder.
+                                </div>
+                                    <div class="flex justify-between items-center text-3xl my-2 font-bold max-[672px]:animate-pulse max-[672px]:-rotate-90"> << </div>
+                                        <div class="w-40 h-20 bg-purple-500 mt-2 shadow-2xl"></div>
+                        </div>
+                    </div>
+                </section> -->
+
+                        <div class="flex justify-center items-center gap-10 py-4">
+                            <div class="bg-green-800 rounded-full h-6 w-6"></div>
+                  
+                            <div class="bg-black rounded-full h-6 w-6"></div>
+
+                            <div class="bg-red-800 rounded-full h-6 w-6"></div>
+                  
+                        </div>
+                    
+                <section class="bg-white text-xl">
+                        <h2 class="font-bold text-center p-5">Offshore Global Logistics; Always here to serve your logistics & <br> supply chain needs!</h2>
+                    <div class="pt-12 text-center">
+                        <p>Learn how our integrity, high ethical standards and solid partnerships <br>
+                             help foster effecient supply chain solutions for our clients.                       
+                        </p>
+                    </div>
+
+                    <div class="flex flex-row row-span-2 justify-center py-4 w-full gap-10 max-[500px]:gap-5">
+                        <a href="{{url_for('quote')}}"><div class="text-center text-lg font-bold border-2 shadow-green-400 border-green-500 text-green-600 w-40 p-2 rounded-2xl hover:border-red-600 2xl:text-2xl max-[500px]:w-32">GET QUOTE</div></a>
+                        <a href="{{url_for('Speak')}}"><div class="text-center text-lg shadow-green-500 font-bold border-2 border-red-600 text-red-700 w-40 p-2 rounded-2xl hover:border-green-600 2xl:text-2xl max-[500px]:w-32">TALK TO US</div></a>
+                        
+                    </div> 
+
+                </section>
+               
+        </main>
+
+        <footer class="bg-green-700 inset-x-0 bottom-0 pb-0 w-full text-lg text-white p-5">
+            <section class="max-w-4xl mx-auto flex flex-col pt-16 p-5 md:space-x-20 md:grid md:grid-flow-col md:grid-cols-3">
+               
+                <div>
+                    <h2 class="uppercase font-bold">Give us a Call!!</h2>
+                    <p>
+                        You can call us regarding anything on: +254-111-052-256
+                    </p> 
+                </div>
+                <div>
+                    <h2 class="uppercase font-bold">Email US!!</h2>
+                    <p class="break-words">
+                        Email us your request or complaint at:<br><a href="mailto:sales@offshorelogistics.co.ke">sales@offshorelogistics.co.ke</a>
+                    </p> 
+                </div>
+                <div>
+                    <h2 class="uppercase font-bold">Policy</h2>
+                    <ul class="list-none text-start">       
+                        <li><a href="{{url_for('EnvPolicy')}}">OGL ESG Policy</a></li>
+                        <li><a href="{{url_for('LabourMgt')}}">Labour Management Plan</a></li>
+                        <li><a href="{{url_for('WasteMgt')}}">Waste Management Plan</a></li>
+                        <li><a href="{{url_for('Conduct')}}">Code Of Conduct</a></li>
+                        <li><a href=#>Anti-Corruption Policy</a></li>       
+                    </ul>
+                </div> 
+            
+            </section>
+            <section class="mx-auto p-4 flex flex-row gap-32 h-16">
+                <h1>
+                    <a href="#Home" class="2xl:h-[3rem]" ><img src= "{{url_for('static', filename='media/logo_black.png') }}" alt="logo3"></a>
+                </h1>        
+                    <div class="flex-row gap-2 right-10 absolute 2xl:text-2xl">
+                            <p class="text-left font-bold hidden sm:block">FOLLOW US: <br>
+                                <div class="hidden min-[425px]:inline-flex min-[425px]:mr-6">
+                                    <a class="pt-2 pl-2" href="https://twitter.com/OffshoreGlobal2" target="_blank"><!--Twitter-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="2xl:h-[3rem]">
+                                            <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/>
+                                        </svg>
+                                    </a>
+                                    <a class="pt-2 pl-2" href="https://www.linkedin.com/company/offshoregloballogisticsltd/" target="_blank"><!--LinkedIn -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="2xl:h-[3rem]">
+                                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                                        </svg>
+                                    </a>
+                                    <a class="pt-2 pl-2" href="#"><!--Instagram-->
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="2xl:h-[3rem]">
+                                            <path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </p>
+                    </div>
+        
+                    </div>
+               </section>
+              <p class="text-center w-full pb-0 py-2 mb-0 text-base min-[375px]:py-3 2xl:text-2xl">&copy;2023 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Offshore Global Logistics</p>
+        
+        </footer>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed (".auto-type", 
+            {
+                strings: ["Intelligent Logistics and Supply Chain Solutions"],
+                typeSpeed: 100,
+                backSpeed: 70,
+                loop: true,
+                fadeOut: true,
+            showCursor:false
+            
+            })
+      </script>
+
+  <script>
+
+    AOS.init(
+        {
+            
+            offset: 200,
+            duration:800,
+            easing:'ease-in-out',
+        }
+    );
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>  
+<html lang="en" class="scroll-smooth h-full w-full m-0 p-0 overflow-x-hidden font-sans">
+    <head> 
+        <title>Offshore Global Logistics</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='media/offsh_icon.ico') }}" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+        <script src="{{url_for('static', filename='js/main.js')}}" defer></script>
+        <script src="{{url_for('static', filename='js/carousel.js')}}" defer></script>
+        <script src="{{url_for('static', filename='js/email.js')}}" defer></script>
+    </head>
+   
+    
+<body class="min-h-screen w-full bg-slate-200 overflow-clip font-sans">
+    <header class="bg-white fixed top-0 z-[50] w-full ">
+        <section class="max-w-5xl p-4 flex justify-between items-start sm:w-auto 2xl:ml-[30rem]">
+            <a href="{{url_for('index')}}">
+                <img  class="w-[140px]" src="{{url_for('static', filename='media/logo5.png' )}}" alt="logo"></a>
+            <div>
+                <button class="text-3xl md:hidden focus:outline-none" id="hamburger-button">
+                    &#9776;
+                </button>
+                <nav class="mt-3 hidden md:block space-x-5 text-base font-semibold xl:-mr-32" aria-label="main">
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="{{url_for('About_Us')}}">About Us</a></button>
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="{{url_for('Services')}}">Services</a></button>                                                       
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="{{url_for('Sustainability')}}">Sustainability</a></button>                                                           
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="#News">News</a></button>
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110 sm:pl-5"><a href="{{url_for('Careers')}}">Careers</a></button>
+                    <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1 hover:scale-110"><a href="{{url_for('Speak')}}">Speak Up</a></button>
+                </nav>
+            </div>
+
+        </section>  
+
+        <!--Mobile menu-->
+        <section id="mobile-menu" class="absolute top-0 bg-green-500/90 w-full text-2xl font-medium flex-col justify-center origin-top animate-open-menu hidden">
+            <button class="text-6xl self-end px-6 ">
+                &times;
+            </button>
+            <nav class="flex flex-col min-h-screen items-center py-6 text-white " aria-label="mobile-menu">
+                <a href="{{url_for('index')}}" class="w-full text-center hover:opacity-80 py-3">
+                    HOME
+                </a>
+                <a href="{{url_for('About_Us')}}" class="w-full text-center  hover:opacity-80 py-3">
+                    ABOUT US
+                </a>
+                <a href="{{url_for('Services')}}" class="w-full text-center hover:opacity-80 py-3">
+                    SERVICES
+                </a>
+                <a href="{{url_for('Sustainability')}}" class="w-full text-center hover:opacity-80 py-3">
+                    SUSTAINABILITY
+                </a>
+                <a href="#" class="w-full text-center hover:opacity-80 py-3">
+                    NEWS
+                </a>
+                <a href="{{url_for('Careers')}}" class="w-full text-center hover:opacity-80 py-3">
+                    CAREERS
+                </a>
+                <a href="{{url_for('Speak')}}" class="w-full text-center hover:opacity-80 py-3">
+                    SPEAK UP
+                </a>
+
+            </nav>
+        </section>
+    </header>
+    <main>
+        {% block content %}
+
+        {% endblock %}
+
+    </main>
+    <footer class="bg-green-700 inset-x-0 bottom-0 pb-0 w-full text-lg text-white 2xl:h-[560px]">
+        <section class="max-w-4xl mx-auto flex flex-col pt-16 p-5 md:space-x-20 md:grid md:grid-flow-col md:grid-cols-3">
+           
+            <div>
+                <h2 class="uppercase font-bold">Give us a Call!!</h2>
+                <p>
+                    You can call us regarding anything on: +254(0) 208000870
+                </p> 
+            </div>
+            <div>
+                <h2 class="uppercase font-bold">Email US!!</h2>
+                <p class="break-words">
+                    Email us your request or complaint at:<br><a href="mailto:info@offshorelogistics.co.ke">info@offshorelogistics.co.ke</a>
+                </p> 
+            </div>
+            <div>
+                <h2 class="uppercase font-bold">Policy</h2>
+                <ul class="list-none text-start">       
+                    <li><a href="{{url_for('EnvPolicy')}}">OGL ESG Policy</a></li>
+                    <li><a href="{{url_for('LabourMgt')}}">Labour Management Plan</a></li>
+                    <li><a href="{{url_for('WasteMgt')}}">Waste Management Plan</a></li>
+                    <li><a href="{{url_for('Conduct')}}">Code Of Conduct</a></li>
+                    </li><a href="{{url_for('Corruption')}}">Anti-Corruption Policy</a></li>       
+                </ul>
+            </div> 
+        
+        </section>
+        <section class="mx-auto p-4 flex flex-row gap-32 h-16 2xl:mt-24">
+            <h1>
+                <a href="#Home" class="h-[2rem]" ><img src= "{{url_for('static', filename='media/logo_black.png') }}" alt="logo3"></a>
+            </h1>        
+                <div class="flex-row gap-2 right-10 absolute 2xl:text-2xl">
+                        <p class="text-left font-bold hidden sm:block">FOLLOW US: <br>
+                            <div class="hidden min-[425px]:inline-flex min-[425px]:mr-6">
+                                <a class="pt-2 pl-2" href="https://twitter.com/OffshoreGlobal2" target="_blank"><!--Twitter-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="2xl:h-[3rem]">
+                                        <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/>
+                                    </svg>
+                                </a>
+                                <a class="pt-2 pl-2" href="https://www.linkedin.com/company/offshoregloballogisticsltd/" target="_blank"><!--LinkedIn -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="2xl:h-[3rem]">
+                                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                                    </svg>
+                                </a>
+                                <a class="pt-2 pl-2" href="#"><!--Instagram-->
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="2xl:h-[3rem]">
+                                        <path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </p>
+                </div>
+    
+                </div>
+           <!---->
+           </section>
+           <p class="text-center w-full pb-0 mb-0 text-base min-[375px]:py-3 2xl:text-2xl">&copy;2023 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Offshore Global Logistics</p>
+          
+    
+    </footer>
+    
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                offset: 200,
+                duration:800,
+                easing:'ease-in-out',
+            }
+        );
+    </script> 
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+<script type="text/javascript">
+    (function(){
+       emailjs.init("LvpJW8D1AeubLRR2N");
+    })();
+ </script>
+    
+    
+</body>
+</html>
+

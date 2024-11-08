@@ -1,0 +1,92 @@
+{% extends 'base.html' %} {% block content %}
+<section class="mt-20 text-xl">
+
+    <div class="w-[inherit]">
+      <img
+        class="w-full h-[80vh] object-cover"
+        src="{{url_for('static', filename='media/header-img.jpg')}} "
+        alt="about_photo"
+      />
+      <h1
+        class="text-3xl font-mono uppercase font-bold underline text-center text-white absolute bg-green-700/50 p-2 ml-14 -mt-36 rounded-md"
+      >
+        About Us
+      </h1>
+    </div>
+    <div
+      class="bg-white mx-14 relative -mt-12 text-xl p-5 text-justify max-md:text-left"
+    >
+      <p>
+        Founded in the year 2014, Offshore Global Logistics is a wold-class
+        Logistics and supply chain firm offering a comprehensive portfolio of
+        services.<br />
+        We are suported by our offices in Kenya and Tanzania as well associates
+        in 22+ African countries and 115 Countries globally . This equips us
+        with a global network thus enhancing our capacity to offer seamless
+        services globally.<br />
+        At Offshore Global Logistics, we provide you with effective and
+        effecient logistics and supply chain solutions through innovative,
+        sustainable and proactive operations.
+      </p>
+    </div>
+  
+</section>
+<section class="mx-20 flex flex-col my-10">
+  <div class="flex flex-row relative max-lg:flex-col " data-aos="fade-left">
+    <h2
+      class="absolute text-xl font-bold bg-gray-400/50 rounded-md ml-8 p-2 mt-2"
+    >
+      Our Vision
+    </h2>
+    <img
+      src="{{url_for('static', filename='media/sunset.jpg')}}"
+      class="md:h-[300px] max-md:object-cover"
+    />
+    <p
+      class="p-5 text-2xl flex justify-center items-center text-left max-[425px]:text-lg"
+    >
+      To be the premier supply chain solutions partner in East Africa committed
+      to supply chain excellence while embodying the aspirations of our
+      stakeholders.
+    </p>
+  </div>
+  <div class="flex flex-row-reverse mt-5 max-lg:flex-col" data-aos="fade-right">
+    <h2
+      class="absolute rounded-md bg-gray-400/50 ml-8 mt-2 p-2 font-bold text-xl"
+    >
+      Our Mission
+    </h2>
+    <img
+      src="{{url_for('static',filename='media/dart.jpg')}}"
+      class="md:h-[300px] max-md:object-cover"
+    />
+    <p
+      class="text-2xl p-5 flex justify-center items-center text-left max-[425px]:text-lg"
+    >
+      To provide innovative supply chain solutions while incorporating the goals
+      of our stakeholders through creation of value.
+    </p>
+  </div>
+  <div class="flex flex-row mt-5 max-lg:flex-col" data-aos="fade-left">
+    <h2
+      class="absolute text-xl rounded-md bg-gray-400/50 ml-8 mt-2 font-bold p-2"
+    >
+      Core Values
+    </h2>
+    <img
+      src="{{url_for('static', filename='media/Diamond.jpg')}}"
+      class="md:h-[300px] max-md:object-cover"
+    />
+    <ul
+      class="ml-10 mt-16 list-disc text-2xl max-md:mt-5 text-left max-[425px]:text-lg"
+    >
+      <li>Agility</li>
+      <li>Innovation</li>
+      <li>Global Awareness</li>
+      <li>Professionalism</li>
+      <li>Integrity</li>
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

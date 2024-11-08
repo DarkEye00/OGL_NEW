@@ -1,0 +1,277 @@
+{% extends 'base.html' %} 
+{% block content %}
+<section>
+  <div class="w-full h-full flex flex-col">
+    <div class="w-[inherit] py-4">
+      <img
+        class="w-[inherit] h-[90vh] object-cover"
+        src="{{url_for('static', filename='media/IMG-20230711-WA0006.jpg')}}"
+        alt=""
+      />
+      <h2
+        class="uppercase text-3xl font-mono font-bold underline text-center text-white absolute bg-green-700/50 p-2 ml-14 -mt-32 rounded-md"
+      >
+        Sustainability
+      </h2>
+      <h3
+        class="uppercase text-base font-mono font-extrabold text-white absolute py-2 ml-20 -mt-20"
+      >
+        Our Plans towards a sustainable future!
+      </h3>
+    </div>
+    <div
+      class="bg-white mx-14 relative -mt-12 text-xl p-5 text-justify max-md:text-left"
+    >
+      <p>
+        At Offshore Global Logistics, our dedication remains unwavering as we
+        constantly evolve and strive to conduct our business in a responsible
+        and sustainable manner. We are committed to adapting and responding to
+        challenges that hinder the world from becoming a better place.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="mt-10">
+  <h2 class="text-center font-bold text-2xl">ENVIRONMENT</h2>
+  <div class="flex justify-center">
+    <img
+      class="w-[400px] h-[250px] rounded-3xl mt-8 px-2"
+      src="{{url_for('static', filename='media/IMG-20230711-WA0007.jpg')}}"
+    />
+  
+  </div>
+  <div class="flex justify-center">
+    <div class="mt-5 p-5 max-w-4xl max-md:text-left mx-10 md:mx-44 text-justify">
+    
+      <ul class="list-decimal mt-5">
+        Offshore Global Logistics is committed to minimizing its environmental
+        impact through varioius activities:
+        <li>
+          Implementing energy-effecient technologies: Offshore Global Logistics in
+          the state-of-art equipment and vehicles that are designed to be
+          energy-effecient, reducing carbon emmissions and fuel consumptions.
+        </li>
+        <li>
+          Renewable energy sources: the company actively explores and invests in
+          renewable energy sources to power its operations, such as solar, wind
+          and hydro-electric power.
+        </li>
+        <li>
+          Alternative Fuels: Offshore Global Logistics is researching and
+          exploring the use of alternative fuels, such as biofuels or hydrogen, to
+          reduce reliance on tradiotional fossil fuels and lower greenhouse
+          emissions.
+        </li>
+        <li>
+          Environmental Perfomance Monitoring: The company regularly monitors and
+          reports on key environmental performance indicators, including energy
+          consumption, waste generation and emissions to track progress and
+          identify areas of improvement.
+        </li>
+        <li>
+          Collaboration and Partnerships: Offshore Global Logistics actively
+          collaborates with industry peers, regulatory bodies and stakeholders to
+          promote environmental sustainability and drive industry-wide initiatives
+          for a greener offshore logistics sector.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="text-center font-bold text-2xl uppercase">People</h2>
+  <div class="flex justify-center">
+    <img
+      class="w-[400px] h-[250px] rounded-3xl mt-8 p-2"
+      src="{{url_for('static', filename='media/IMG-20230711-WA0009.jpg')}}"
+    />
+  </div>
+  <div class="flex justify-center">
+    <div class="mt-5 p-5 max-w-4xl max-md:text-left mx-10 text-justify lg:mx-44">
+      <p>
+        Offshore Global Logistics places a high priority on the well-being and
+        development of its employees :
+      </p>
+      <ul class="list-decimal mt-5">
+        <li>
+          Health and Safety: The company is committed to providing a safe and
+          healthy work environment for all employees .Rigorous safety protcols,
+          training programs and regular safety inspections are in place to ensure
+          the well-being of personnel.
+        </li>
+        <li>
+          Diversity and Inclusion: Offshore Global Logistics values diversity and
+          fosters an inclusive work environment where individuals from various
+          backgrounds can thrive. The company promotes equal opportunities and
+          ensures fair and equitable treatment of all employees.
+        </li>
+        <li>
+          Employee Well-being:The company invests in employee well-eing programs,
+          including initiatives for mental health support, -life balance and
+          access to healthcare resources.
+        </li>
+        <li>
+          Professional Development: Offshore Global Logistics encourages
+          continouos professional development for its employees through training
+          programs, skill-builing opportunities and career advancement
+          initiatives.
+        </li>
+        <li>
+          Human Rights: The company upholds and respects human rights, complying
+          with international labor standards and regulations to ensure fair and
+          ethical treatment of workers across its operations.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="text-center font-bold text-2xl uppercase">communities</h2>
+  <div class="flex justify-center">
+    <img
+      class="w-[400px] h-[250px] rounded-3xl mt-8 p-2"
+      src="{{url_for('static', filename='media/IMG-20230711-WA0010.jpg')}}"
+    />
+  </div>
+  <div class="flex justify-center">
+    <div class="mt-5 p-5 max-w-4xl max-md:text-left mx-10 text-justify lg:mx-44">
+      <p>
+        Offshore Global Logistics actively engages with and supports local
+        communities in areas where it operates :
+      </p>
+      <ul class="list-decimal mt-5">
+        <li>
+          Community Engagement: The company establishes positive relationships
+          with local communities actively seeking their input and feedback.
+          Regular communications channels ae maintained to address community and
+          build long-term partnerships.
+        </li>
+        <li>
+          Compliance with Standards: Offshore Global Logistics adheres to
+          international standards and regulations, including the United Nations
+          Global Compact, to ensure ethical business operations and responsible
+          corporate citizenship.
+        </li>
+        <li>
+          Transparency: The company maintains transparency in its business
+          practices, providing accurate and timely reporting of financial and
+          non-financial performance. Stakeholders are kept informed of the
+          company's sustainability initiatives and progress.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="text-center font-bold text-2xl uppercase">safety</h2>
+  <div class="flex justify-center">
+    <img
+      class="w-[400px] h-[250px] rounded-3xl mt-8 p-2"
+      src="{{url_for('static', filename='media/IMG-20230711-WA0008.jpg')}}"
+    />
+  </div>
+  <div class="flex justify-center">
+    <div class="mt-5 p-5 max-w-4xl max-md:text-left mx-10 text-justify lg:mx-44">
+      <p>
+        Safety is a core value for Offshore Global Logistics, and the company
+        takes extensive measures to ensure the well-being of its employees and
+        stakeholders:
+      </p>
+      <ul class="list-decimal mt-5">
+        <li>
+          Safety Management Systems: The company implements robust safety
+          management Systems and procedures, adhering to industry best practices
+          and regulatory requirements. This includes conducting regular risk
+          assessments, developing safety protocols, and providing comprehensive
+          training to employees.
+        </li>
+        <li>
+          Risk Mitigation: Offshore Global Logistics identifies potential risks
+          and implements appropriate mitigation measures to minimize accidents ,
+          injuries and operational disruptions. Continouos monitoring and analysis
+          of safety performance allow for ongoing improvements.
+        </li>
+        <li>
+          Compliance: The company ensures compliance with relevant safety
+          regulations, standards, and industry guidelines to maintain a safe
+          working environment and mitigate operational risks.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="text-center font-bold text-2xl uppercase">ethics</h2>
+  <div class="flex justify-center">
+    <img
+      class="w-[400px] h-[250px] rounded-3xl mt-8 p-2"
+      src="{{url_for('static', filename='media/IMG-20230711-WA0012.jpg')}}"
+    />
+  </div>
+  <div class="flex justify-center">
+    <div class="mt-5 p-5 max-w-4xl max-md:text-left mx-10 text-justify lg:mx-44">
+      <p>
+        Offshore Global Logistics upholds strong ethical standards and promotes a
+        culture of integrity throughout the organization:
+      </p>
+      <ul class="list-decimal mt-5">
+        <li>
+          Ethical Business Practices: The company maintains a zero-tolerance
+          policy for corruption, bribery, and unethical behavior. Empoyees are to
+          adhere to a code of conduct that emphasizes transparency and ethical
+          decision-making.
+        </li>
+        <li>
+          Risk Mitigation: Offshore Global Logistics identifies potential risks
+          and implements appropriate mitigation measures to minimize accidents ,
+          injuries and operational disruptions. Continouos monitoring and analysis
+          of safety performance allow for ongoing improvements.
+        </li>
+        <li>
+          Compliance: The company ensures compliance with relevant safety
+          regulations, standards, and industry guidelines to maintain a safe
+          working environment and mitigate operational risks.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="text-center font-bold text-2xl uppercase">governance</h2>
+  <div class="flex justify-center">
+    <img
+      class="w-[400px] h-[250px] rounded-3xl mt-8 p-2"
+      src="{{url_for('static', filename='media/IMG-20230711-WA0011.jpg')}}"
+    />
+  </div>
+  <div class="flex justify-center">
+    <div class="mt-5 p-5 max-w-4xl max-md:text-left mx-10 text-justify lg:mx-44">
+      <p>
+        Offshore Global Logistics is committed to strong corporate governance
+        practices and transparent decision-making processes:
+      </p>
+      <ul class="list-decimal mt-5">
+        <li>
+          Accountability and Transparency: The company promotes accountability and
+          transparency in its governance structure, with clear roles and
+          responsibilities. Regular reporting of ESG performance and disclosure of
+          relevant information to stakeholders are key priorities.
+        </li>
+        <li>
+          Board Oversight: Offshore Global Logistics adheres to applicable laws,
+          regulations and industry standards thus ensuring compliance across all
+          aspects of its operations.
+        </li>
+        <li>
+          Legal and Regulatory Compliance: The company ensures compliance with
+          relevant safety regulations, standards, and industry guidelines to
+          maintain a safe working environment and mitigate operational risks.
+        </li>
+        <li>
+          Stakeholder Engagement: The company actively engages with shareholders,
+          employees, customers, and other stakeholders to understand ther
+          perspectives,address concerns and incorporate their feedback into
+          decision-making processes.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

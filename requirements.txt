@@ -1,0 +1,6 @@
+#requirements for this project another local computer 
+Flask==2.3.2
+python==3.11
+javascript
+tailwindcss==3.3.3
+

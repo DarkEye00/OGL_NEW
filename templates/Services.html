@@ -1,0 +1,266 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="flex justify-center items-center p-2">         
+        <div class="relative mt-20 max-w-5xl">
+            <div id="slider">
+                
+                <div class="h-full w-full object-cover relative p-5 flex flex-col">
+                    <h2 class="uppercase text-xl p-3 font-bold">Sea Freight</h2>
+                    <img class="w-full object-cover h-[50vh]" src="{{url_for('static', filename='media/ship_Freight.jpg')}}">
+                    <p class="h-auto w-auto my-2 text-xl left-0">
+                        We provide time definite, innovative sea freight services for both Full Container Load (FCL) and Less than Container Load (LCL) shipments worldwide. Supported by our world-class office and vast information infrastructure, Offshore Global Logistics sea freight services feature:
+                            <ul class="list-disc ml-10 text-xl pb-5">
+                                <li>Reliability.</li>
+                                <li>Access to exceptional services from multiple carriers</li>
+                                <li>Container and vessel space during the challenging
+                                seasons</li>
+                                <li>Single point of contact for all your global needs</li>
+                                <li>Local expertise and dedicated customer service</li>
+                                <li>Competitive and flexible rates and terms</li>
+                                <li>Equipment and space protection with carriers</li>
+                            </ul>
+                        
+                        <span class="text-xl">We have capacity to move cargo from any port around
+                        the world.<br>
+                        Our Sea Freight Services include:</span>
+                        <ul class="ml-10 list-disc text-xl">
+                            
+                            <li>Project Cargo</li>
+                            <li>Bulk Cargo</li>
+                            <li>Temperature controlled cargo</li>
+                            <li>LCL & FCL cargo</li>
+                            <li>Automotive logistics (RO-RO)</li>
+                            <li>Transshipment cargo</li>
+                        </ul>
+
+                    </p>
+                    
+                </div>
+                
+                <div class="h-full w-full object-cover relative p-5 flex-col hidden">
+                    <h2 class="uppercase text-xl p-3 font-bold">Air freight services</h2>
+                    <img class="w-full object-cover h-[50vh]" src="{{url_for('static', filename='media/Air_freight.jpg')}}">
+                    <p class="h-auto w-auto my-2 text-xl left-0">
+                        Our airfreight services provide three solutions, value, speed
+                        and low cost.
+                        In order to satisfy your demand for space allocation and
+                        competitive rates, we have kept a good relationship with
+                        airlines, agents and handling partners for major carriers.
+                        This has helped us maintain both peak and off peak
+                        consistency in service delivery.
+                        For oversize and dangerous cargo transportation by air, we
+                        provide professional know-how related to the handling
+                        including complete door to door delivery logistics on a
+                        global scale.<br>
+                        Our Airfreight Services include: 
+                        <ul class="ml-10 list-disc text-xl">
+                            <li>General Cargo</li>
+                            <li>Perishable Logistics</li>
+                            <li>Fashion Logistics</li>
+                            <li>Healthcare and Pharmaceutical Logistics</li>
+                            <li>Dangerous cargo</li>
+                            <li>Air Charter Services</li>
+                            <li>Transshipment Cargo</li>
+                        </ul>
+                    </p>
+                    
+                </div>
+
+                <div class="h-full w-full object-cover relative p-5 flex-col hidden">
+                    <h2 class="uppercase text-xl p-3 font-bold">Order Fulfillment & Distribution</h2>
+                    <img class="w-full object-cover h-[50vh]" src="{{url_for('static', filename='media/courier.jpg')}}">
+                    <p class="h-auto w-auto my-2 text-xl left-0">
+                        Offshore Global Logistics continuously strives at being recognized as
+                        the best logistics and courier service provider in Kenya. We achieve this
+                        by maintaining a high quality service every time. Our service gives you
+                        the power and flexibility to effectively manage all your shipments
+                        through our state of the art online tracking system. 
+                    </p>
+                    
+                </div>
+
+                
+                <div class="h-full w-full object-cover p-5 flex-col relative hidden">
+                    <h2 class="uppercase text-xl p-3 font-bold">Warehousing</h2>
+                    <img class="h-[50vh] w-full object-cover" src="{{url_for('static', filename='media/Whouse.jpg')}}">
+                    <p class="h-auto w-auto my-2 text-xl text-justify left-0 p-2">
+                        Our modernized warehousing & distribution facility located off
+                        Mombasa Road in Nairobi: a very close proximity to the both
+                        the ICDN (Inland Container Depot Nairobi) and JKIA, is well
+                        equipped to meet our client’s cargo handling needs.
+                        The technological innovations we have employed in our facility
+                        i.e the use of a Warehousing Management System, Smart
+                        Scanners among other technologies, has boosted our
+                        efficiency in stock management and control.
+                        Supported by our well experienced and capable personnel,
+                        exceptional in managing end-to-end inventory planning, we
+                        offer replenished tailor cut warehousing service and
+                        proficiency to handle a wide assortment of products to meet
+                        our clients’ needs.
+                        Our clients reap from shared cost benefits ranging from
+                        shared space, labor, equipment, and technology.
+                        
+                        Our Warehouse management system (WMS) offers our clients with 100 degrees visibility of
+                        their stock among other capabilities that include;
+                        <ul class="text-xl list-disc ml-20">
+                            <li>24Hr web-based Access through multiple options
+                                including mobile device</li>
+                            <li>Ability to place orders for dispatch. With multi-level
+                                approvals- if needed</li>
+                            <li>Access to real time stock reports</li>
+                            <li>Access to real time data on both receipts and
+                            dispatches</li>
+                            <li>Ability to get re-order level alerts</li>
+                            <li>Ability to set authorized consignees of cargo</li>
+                            <li>Ability to authorize SKU conversions & transfers to
+                            damaged/unusable stock</li>
+                            <li>System based stock take</li>
+                            <li>System integration options</li>
+                        </ul>
+                        
+                        <ul class="ml-10 text-xl list-disc mt-5">
+                            <li>Repackaging, Strapping, shrink-wrapping & Palletizing for shipping</li>
+                            <li>Bonded warehouse</li>
+                            <li>Barcodes, KEBS, KRA, Warranty sticker</li>
+                            <li>Kitting & Light Assembly Services</li>
+                            <li>Product Rework & Tech Support Services</li>
+                            <li>Inspection services- SGS, Bureau Veritas, CCIC</li>
+                            <li>Stickering Services e.g. Labelling, Serializing</li>
+                        </ul>
+                    </p>
+                    
+                </div>
+
+                <div class="h-full w-full object-cover p-5 flex-col relative hidden">
+                    <h2 class="uppercase text-xl p-3 font-bold">Project Cargo</h2>
+                    <img class="w-full object-cover h-[50vh]" src="{{url_for('static', filename='media/cargo.jpg')}}">
+                    <p class="h-auto w-auto my-2 text-xl left-0">
+                        Offshore Global Logistics regularly handles over-dimensional and breakbulk cargos. With over a decade of
+                        experience we have perfected management of the flow of time-critical material, supplies, and equipment direct
+                        to destination points all over Eastern Africa.
+                        Owing to our meticulous pre-planning, we ensure timely execution of project cargo, full cargo visibility and agile
+                        responsiveness to potential problems.<br>
+                        <strong>Highlights</strong>
+                        <ul class="text-xl ml-10 list-disc">
+                            <li>RoRo services and special handling for vehicles.</li>
+                            <li>In-House Project Team to create load plans, secure equipment, and ensure timely delivery</li>
+                            <li>Custom route survey and site survey with state permits and escorts when needed</li>
+                            <li>Carefully selected specialized carriers with global, national, regional, and local coverage</li>
+                        </ul>
+                    </p>
+                    
+                </div>
+
+                <div class="h-full w-full object-cover p-5 flex-col relative hidden">
+                    <h2 class="uppercase text-xl p-3 font-bold">Customs Clearance</h2>
+                    <img class="w-full object-cover h-[50vh]" src="{{url_for('static', filename='media/clearance.jpg')}}">
+                    <p class="h-auto w-auto my-2 text-xl left-0">
+                        Our customs clearance services is all about simplicity. Our goal is to eradicate clients frustration through ensuring we make clearance as easy and as timely as possible.<br>
+                        Our customers benefit from the following :
+                        <ul class="ml-10 text-xl list-disc">
+                            <li>Our team of customs clearance specialists work closely with all the clients for pre-working of relevant consignments requirements.</li>
+                            <li>Owing to the solid relations we have maintained with customs we authorities; we guarantee a timely cargo clearance.</li>
+                            <li>Our well-trained team of customs professionals also come in handy to assist in preparation of relevant shipment documentation.</li>
+                        </ul>
+                    </p>
+                    
+                </div>
+
+                <div class="h-full w-full object-cover p-5 flex-col relative hidden">
+                    <h2 class="uppercase text-xl p-3 font-bold">Transport and Distribution</h2>
+                    <img class="w-full object-cover h-[50vh]" src="{{url_for('static', filename='media/forwarding.jpg')}}">
+                    <p class="h-auto w-auto my-2 text-xl left-0">
+                        Our transport service is all about efficiency, cost-effectiveness, reliability
+                        and sustainable transport solution. We take into account our clients'
+                        commodity types and their needs and formulate tailored solutions.
+                        We ensure timely and safe transportation as well as delivery of their
+                        products.
+                        <br>
+                        <strong>Our Specialties include</strong>
+                        <ul class="ml-10 text-xl list-disc">
+                            <li>Own operated office in Dar es salaam(Tanzania) that provides presence to facilitate transit to all the 8 countries bordering Tz.</li>
+                            <li>Inhouse customs/border clearance, fully lincesed to provide customs declarations at the border.</li>
+                            <li>Ability to transport all kinds of cargo(FTL, LTL, General Cargo, Temperature controlled cargo,Oversize/Out of gauge cargo, Car carrier services, Liquid cargo(Tanker shipments), Pharmaceuticals)</li>  
+                            <li>Tracking and live updates</li>
+                            <li>Safe and timely Delivery</li>
+                            <li>Door to door delivery</li>
+                            <li>Prompt Communication</li>
+                            <li>Need-based custom-made trailers/trucks</li>
+                            <li>Presence at all major border points in Kenya.</li>
+                            <li>Contracts with more than 2,000+ carriers to ensure capacity, even in peak season.</li>
+                        </ul>
+                        <br>
+
+                        <strong>We offer:</strong>
+                            <ul class="list-disc ml-10 text-xl">
+                                <li>Local Transport to all locations within Kenya.</li>
+                                <li>Transit cargo transportation to <strong>East, Central</strong> and <strong>Southern Africa</strong>.</li>
+                                <li>Secondary Distribution.</li>
+                                <li>Shunting services with:<br>
+                                Dedicated capacity consisting of a fleet of trucks ranging from 1tonne, 2tonne, 3tonne, 5tonne, 7tonne, 10tonne, 20ft and 40ft.<br>
+                                Customized trailers that are:<br>
+                                    -Extended to ensure cost efficiency due to more
+                                    cargo load and space optimization.<br>
+                                    -Environmentally friendly. Ensures reduced
+                                    emissions due to more cargo load capacity on the
+                                    trucks.</li>
+                            </ul>
+                    </p>
+                    
+                </div>
+
+                <div class="h-full w-full object-cover p-5 flex-col relative hidden">
+                    <h2 class="uppercase text-xl p-3 font-bold">Contract Logistics</h2>
+                    <img class="w-full object-cover h-[50vh]" src="{{url_for('static', filename='media/contract.jpg')}}">
+                    <p class="h-auto w-auto my-2 text-xl left-0">
+                        Following our expertise and vast knowledge in supply chain management,
+                        multinational organizations have contracted us to design and plan supply
+                        chains, facility design and management, warehousing and inventory
+                        management, transportation and distribution, and order processing.
+                        Our clients benefit from exceptional cost optimization and efficiency in
+                        facilitation and management.
+                        
+                    </p>
+                    
+                </div>
+
+                <div class="h-full w-full object-cover p-5 flex-col relative hidden">
+                    <h2 class="uppercase text-xl p-3 font-bold">Insurance Cover Notes</h2>
+                    <img class="w-full object-cover h-[50vh]" src="{{url_for('static', filename='media/insurance.jpg')}}">
+                    <p class="h-auto w-auto my-2 text-xl left-0">
+                        Following the Government of Kenya’s directive to make cover notes
+                        mandatory, we partnered with credible and reliable insurance
+                        agencies and reached an agreement to ensure marine covers are
+                        raised for our client’s cargo upon request.
+                        
+                    </p>
+                    
+                </div>
+
+                <div class="h-full w-full object-cover p-5 flex-col relative hidden">
+                    <h2 class="uppercase text-xl p-3 font-bold">RETURNING RESIDENTS
+                        LOGISTICS
+                        </h2>
+                    <img class="w-full object-cover h-[50vh]" src="{{url_for('static', filename='media/Resident.png')}}">
+                    <p class="h-auto w-auto my-2 text-xl left-0">
+                        We offer specialized end-to-end household goods movement for individuals moving from one country to another as part of our returning residents service portfolio.
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="top-[200px] left-0 h-full w-full absolute">
+                <div class="flex justify-between items-center">
+
+                <button onclick="prev()" class="bg-green-700 border-gray-500 rounded-full p-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+                </button>
+                <button onclick="next()" class="bg-green-700 border-gray-500 rounded-full p-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,4 @@
+/* our tailwind base utilities are contained in this file*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
