@@ -56,19 +56,19 @@ def Corruption():
 def Offices():
     return render_template("contact.html")
 
-@app.route('/our-culture/')
+@app.route('/Careers/our-culture/')
 def culture():
     return render_template("culture.html")
 
-@app.route('/join-us/')
+@app.route('/Careers/join-us/')
 def jobs():
     return render_template("Application.html")
 
-@app.route('/Diversity-&-Inclusion/')
+@app.route('/Careers/Diversity-&-Inclusion/')
 def diversity():
     return render_template("diversity.html")
 
-@app.route('/Training/')
+@app.route('/Careers/Training/')
 def training():
     return render_template("training.html")
 

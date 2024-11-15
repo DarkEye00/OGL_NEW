@@ -3,31 +3,84 @@
     <head> 
         <title>Offshore Global Logistics</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="At Offshore Global Logistics provide businesses with timely logistics services including air, road and sea freights, customs clearance and warehousing solutions in Kenya and across Africa."/>
+        <meta name="keywords" content="Logistics company in Kenya">
+        <meta name="keywords" content="Warehousing solutions in Kenya">
+        <meta name="keywords" content="Customs Clearance companies in East Africa">
+        <meta name="keywords" content="Logistics company in Uganda">
+        <meta name="keywords" content="Logistics company in Tanzania">
+        <meta name="keywords" content="Logistics solutions in  Nairobi">
         <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='media/offsh_icon.ico') }}" />
+        <script src="https://kit.fontawesome.com/0603f90087.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
         <script src="{{url_for('static', filename='js/main.js')}}" defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     </head>
     
 <body class="min-h-screen w-full bg-slate-200 overflow-clip font-sans">
     <header class="bg-white fixed top-0 z-[50] w-full ">
-        <section class="max-w-5xl p-4 flex justify-between items-start sm:w-auto 2xl:ml-[30rem]">
+        <section class="max-w-5xl p-2 flex justify-between sm:w-auto 2xl:ml-[30rem]">
             <a href="{{url_for('index')}}">
                 <img  class="w-[140px]" src="{{url_for('static', filename='media/logo5.png' )}}" alt="logo"></a>
             <div>
                 <button class="text-3xl md:hidden focus:outline-none" id="hamburger-button">
                     &#9776;
                 </button>
-                <nav class="mt-3 hidden md:block space-x-5 text-base font-semibold xl:-mr-32" aria-label="main">
+                <!--<nav class="mt-3 hidden md:block space-x-5 text-base font-semibold xl:-mr-32" aria-label="main">
                     <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1 sm:pl-5"><a href="{{url_for('About_Us')}}">About Us</a></button>
                     <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1  sm:pl-5"><a href="{{url_for('Services')}}">Services</a></button>                                                       
                     <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1 sm:pl-5"><a href="{{url_for('Sustainability')}}">Sustainability</a></button>                                                           
                     <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1  sm:pl-5"><a href="#News">News</a></button>
                     <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1  sm:pl-5"><a href="{{url_for('Careers')}}">Careers</a></button>
                     <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1"><a href="{{url_for('Speak')}}">Speak Up</a></button>
+                </nav> -->
+                <nav class="hidden md:block mt-2 space-x-5 font-normal text-md" aria-label="main">
+                    <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a>Home</a></button>
+                   <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a>Navicus360</a></button>
+                    <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a>Contact Us</a></button>
+                    <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown"  class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1 " type="button">Menu</a><i class="fa-solid fa-caret-down fa-xl" style="color: #2abb43; padding-left: 5px;"></i>
+                    </button>
+                    
+                    <!-- Dropdown menu -->
+                    <div id="multi-dropdown" class="z-10 hidden border-r-2 border-l-2 border-green-500 px-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-full h-screen mt-10 ">
+                        <div class="py-2 text-sm flex text-gray-700 animate-open-menu mx-10" aria-labelledby="multiLevelDropdownButton">
+                       
+                            <div>
+                                <h2 class="text-xl active:underline visited:underline">Services</h2>
+                                <div class="px-2 border-r border-green-400 h-[80vh]">
+                                    <a class="block px-4 py-2 hover:bg-gray-100 ">dsdfa</a>
+                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdfa</a>
+                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdf</a>
+                                    <a class="block px-4 py-2 hover:bg-gray-100">adsdasd</a>
+                                </div>
+                            </div>       
+                        
+                            <div class="">
+                                <h2></h2>
+                                <div class="px-2 border-r border-green-400 h-[80vh]">
+                                    <a class="block px-4 py-2 hover:bg-gray-100 ">dsdfa</a>
+                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdfa</a>
+                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdf</a>
+                                    <a class="block px-4 py-2 hover:bg-gray-100">adsdasd</a>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h2></h2>
+                                <div class="px-2 border-r border-green-400 h-[80vh]">
+                                    <a class="block px-4 py-2 hover:bg-gray-100 ">dsdfa</a>
+                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdfa</a>
+                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdf</a>
+                                    <a class="block px-4 py-2 hover:bg-gray-100">adsdasd</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
                 </nav>
             </div>
-
+            
         </section>
 
         <!--Mobile menu-->
@@ -65,12 +118,11 @@
     <section  class="relative h-[100vh]">
         <div class="w-[calc(100vw-15px)] h-full absolute  -translate-x-[50%] left-[50%] ">
             <!--overlay-->   
-            <div class="absolute top-0 left-0 w-full h-[95vh] z-20 bg-green-800/30"></div>
+            <!--<div class="absolute top-0 left-0 w-full h-[95vh] z-20 bg-green-800/30"></div>-->
             <!---->
-                <video class="object-cover pointer-events-none w-full h-[95vh] z-10" autoplay loop muted>
-                    <source src="{{url_for('static', filename='media/video.mp4') }}" type="video/mp4" /> 
-                    Your browser does not support the video tag.
-                </video> 
+                <img class="object-cover w-full h-full z-10" src="{{url_for('static', filename='media/IMG_9944.JPG') }}" alt="Warehouse Forklift">
+                  
+                    
         </div>   
       <!---->
     </section>     
@@ -93,156 +145,7 @@
         
     </div>
              
-        <main>
-
-                <section id="serv" class="pb-3" data-aos="fade-up" data-aos-delay="450">
-                    
-                    <h2 class="uppercase text-3xl font-bold text-center pb-2 bg-slate-200 h-32 flex justify-center items-center 2xl:text-4xl text-gray-900 ">OUR SERVICES</h2>
-                    <a href="{{url_for('Services')}}">
-                        <div class="px-10 pt-2 flex flex-row row-span-3 justify-center items-center gap-5 lg:gap-10 2xl:gap-28 xl:justify-center 2xl:text-2xl 2xl:justify-center">
-                            <div class="-mt-10 flex justify-center w-56 h-52 rounded-xl 2xl:w-[25rem] 2xl:h-[22rem] shadow-2xl text-black hover:text-green-800 " data-aos="zoom-in-up">
-                                <img src="{{url_for('static', filename='media/Whouse.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  2xl:justify-center 2xl:w-[25rem]  2xl:h-[22rem]  object-cover">
-                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl lg:w-52 max-sm:w-52">
-                                        <p>Warehousing &<br>Distribution</p>
-                                    </div>
- 
-                            </div>
-                            <div class="-mt-10 flex justify-center w-56 h-52 rounded-xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] shadow-2xl  text-black hover:text-green-800 max-sm:hidden" data-aos="zoom-in-up">
-                                <img src="{{url_for('static', filename='media/Air_freight.jpg')}}" class="rounded-xl shadow-2xl  transition ease-in-out delay-75 hover:translate-y-2  object-cover ">
-                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold h-auto 2xl:text-3xl 2xl:mt-36 lg:w-52 max-sm:w-52">
-                                        <p>Air<br> Freight</p>
-                                    </div>
- 
-                            </div>
-                            
-                            <div class="-mt-10 flex justify-center w-56 h-52 rounded-xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] shadow-2xl text-black hover:text-green-800 max-sm:hidden max-md:hidden " data-aos="zoom-in-up">
-                                <img src="{{url_for('static', filename='media/ship_Freight.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
-                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold h-auto 2xl:text-3xl 2xl:mt-36 lg:w-52">
-                                        <p>Sea<br> Freight</p>
-                                    </div>
- 
-                            </div>
-                            <div class="-mt-10 flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800 max-[520px]:hidden" data-aos="zoom-in-up">
-                                <img src="{{url_for('static', filename='media/Road.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
-                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 max-sm:w-52">
-                                        <p>Road<br> Freight</p>
-                                    </div>
- 
-                            </div> 
-
-                        </div>
-                            
-                        <div class="px-10 flex flex-row row-span-3 justify-center items-center gap-5 lg:gap-10 xl:justify-center 2xl:gap-28-2xl mt-10 2xl:mt-16 2xl:justify-center 2xl:gap-28 " >
-                            
-                                <div class="flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800" data-aos="zoom-in-up">
-                                    <img src="{{url_for('static', filename='media/forwarding.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2 object-cover">
-                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 max-md:w-52">
-                                        <p>Freight<br> Forwarding</p>
-                                    </div> 
-                                   
-                                </div>
-                                <div class="flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800 max-[520px]:hidden" data-aos="zoom-in-up">
-                                    <img src="{{url_for('static', filename='media/Clearance.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
-                                        <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 max-md:w-52">
-                                            <p>Customs<br> Clearance</p>
-                                        </div>
-     
-                                </div>
-     
-                                <div class=" flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800 max-[375px]:hidden max-sm:hidden" data-aos="zoom-in-up">
-                                    <img src="{{url_for('static', filename='media/import.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
-                                        <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 ">
-                                            <p>Imports &<br> Exports</p>
-                                        </div>
-     
-                                </div>
-                               
-                                <div class="flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800 max-md:hidden max-[375px]:hidden max-sm:hidden" data-aos="zoom-in-up">
-                                    <img src="{{url_for('static', filename='media/cargo.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  max-w-full object-cover">
-                                        <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52">
-                                            <p>Project<br> Cargo</p>
-                                        </div>
-     
-                                </div> 
-                        </div>
-
-                        <div class="px-10 flex flex-row row-span-3 justify-center items-center gap-5 lg:gap-10 xl:justify-center 2xl:gap-28-2xl mt-10 2xl:mt-16 2xl:justify-center 2xl:gap-28 " >
-                            
-                            <div class="flex justify-center mx-0 w-56 h-52 rounded-xl 2xl:w-[25rem] 2xl:h-[22rem]  text-black hover:text-green-800 max-[520px]:hidden" data-aos="zoom-in-up">
-                                <img src="{{url_for('static', filename='media/courier.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2 object-cover">
-                                <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 max-sm:w-52">
-                                    <p>Order <br> Fulfillment</p>
-                                </div> 
-                               
-                            </div>
-                            <div class="flex justify-center w-56 h-52 rounded-xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:group-only:bg-gray-600 hover:text-green-800 max-[375px]:hidden max-sm:hidden" data-aos="zoom-in-up">
-                                <img src="{{url_for('static', filename='media/contract.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
-                                    <div class="absolute flex p-2 bottom-2 bg-gray-400/70 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52  ">
-                                        <p>Contracts<br> Management</p>
-                                    </div>
- 
-                            </div>
- 
-                            <div class=" flex justify-center w-56 h-52 rounded-xl  2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800" data-aos="zoom-in-up">
-                                <img src="{{url_for('static', filename='media/Whouse.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2  object-cover">
-                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52 max-sm:w-52">
-                                        <p>Cross Border<br> Trade</p>
-                                    </div>
- 
-                            </div>
-                           
-                            <div class="flex justify-center w-56 h-52 rounded-xl shadow-2xl 2xl:justify-center 2xl:w-[25rem] 2xl:h-[22rem] text-black hover:text-green-800 max-[375px]:hidden max-md:hidden max-sm:hidden" data-aos="zoom-in-up">
-                                <img src="{{url_for('static', filename='media/others.jpg')}}" class="rounded-xl shadow-2xl transition ease-in-out delay-75 hover:translate-y-2 max-w-full object-cover">
-                                    <div class="absolute bg-gray-400/70 flex p-2 bottom-2 text-lg font-bold 2xl:text-3xl 2xl:mt-36 lg:w-52">
-                                        <p>Other Logistics<br> Services</p>
-                                    </div>
- 
-                            </div> 
-                        </div>
-                    </a>    
-                    <!---->
-                    <div class="flex justify-center items-center py-2 mt-5 2xl:py-4">
-                        <a href="{{url_for('Services')}}" class="text-center text-lg font-bold border-2 shadow-green-400 border-green-500 w-60 p-2 rounded-2xl hover:border-green-500 hover:text-green-600 2xl:text-3xl">View More</a>
-                    </div>
-                        
-                </section> 
-            <!--
-                <section class="p-5 flex justify-center">
-        
-                    <div class="2xl:w-5xl max-w-7xl" data-aos="fade-down" data-aos-delay="450">
-                        <h2 class="text-3xl font-bold py-3 text-center">INSIGHTS</h2>
-                        <div class="flex flex-row row-span-3 pb-4 justify-center items-center max-[672px]:flex-col">
-                            <div class="w-40 h-20 bg-purple-500 mt-5 shadow-2xl"></div>
-                                <div class=" my-2 flex justify-between items-center text-3xl font-bold max-[672px]:animate-pulse max-[672px]:rotate-90"> >> </div>
-                                    <div class="bg-white h-auto w-auto p-4 my-2 text-lg shadow-2xl">
-                                            Cold chain logistics is the transport of 
-                                            temperature-controlled products, such as temperature-sensitive foods and pharmaceutical products.
-                                        </div>
-                        </div>
-                        <div class="flex flex-row row-span-3 pb-4 justify-center items-center max-[672px]:flex-col-reverse">
-                            <div class="bg-white h-auto p-4 w-auto my-2 text-lg shadow-2xl">A hub and spoke model is a centralized logistics system that resembles a bicycle wheel 
-                                    with a central hub that connects multiple spokes. 
-                            </div>
-                                    <div class="flex justify-between items-center my-2 text-3xl font-bold max-[672px]:animate-pulse max-[672px]:-rotate-90"> << </div>
-                                        <div class="w-40 h-20 bg-purple-500 mt-2 shadow-2xl"></div>
-                        </div>
-                        <div class="flex flex-row row-span-3 pb-4 justify-center items-center max-[672px]:flex-col">
-                            <div class="w-44 h-20 bg-purple-500 shadow-2xl"></div>
-                                <div class="my-2 flex justify-between items-center text-3xl  font-bold max-[672px]:rotate-90 max-[672px]:animate-pulse"> >> </div>
-                                    <div class="bg-white h-auto w-auto p-4 my-2 text-lg shadow-2xl">
-                                        Warehousing services simplify supply chain management by providing enough space to store finished goods,inbound functions that prepare items for storage and outbound functions that consolidate, 
-                                        pack and ship orders accordingly.
-                                    </div>
-                        </div>
-                    
-                        <div class="flex flex-row row-span-3 pb-4 justify-center items-center max-[672px]:flex-col-reverse">
-                            <div class="bg-white h-auto p-4 w-auto mt-4 text-lg shadow-2xl">The freight forwarding process involves the flow of shipment and gods from two destinations carried out by a freight forwarder.
-                                </div>
-                                    <div class="flex justify-between items-center text-3xl my-2 font-bold max-[672px]:animate-pulse max-[672px]:-rotate-90"> << </div>
-                                        <div class="w-40 h-20 bg-purple-500 mt-2 shadow-2xl"></div>
-                        </div>
-                    </div>
-                </section> -->
+        <main>      
 
                         <div class="flex justify-center items-center gap-10 py-4">
                             <div class="bg-green-800 rounded-full h-6 w-6"></div>
@@ -329,9 +232,10 @@
               <p class="text-center w-full pb-0 py-2 mb-0 text-base min-[375px]:py-3 2xl:text-2xl">&copy;2023 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Offshore Global Logistics</p>
         
         </footer>
-
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
       <script>
         var typed = new Typed (".auto-type", 
             {
