@@ -18,7 +18,7 @@
         <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     </head>
     
-<body class="min-h-screen w-full bg-slate-200 overflow-clip font-sans">
+<body class="min-h-screen w-full bg-white overflow-clip font-sans">
     <header class="bg-white fixed top-0 z-[50] w-full ">
         <section class="max-w-5xl p-2 flex justify-between sm:w-auto 2xl:ml-[30rem]">
             <a href="{{url_for('index')}}">
@@ -36,44 +36,72 @@
                     <button class="uppercase hover:text-green-900  hover:underline transition ease-out delay-100 hover:translate-y-1"><a href="{{url_for('Speak')}}">Speak Up</a></button>
                 </nav> -->
                 <nav class="hidden md:block mt-2 space-x-5 font-normal text-md" aria-label="main">
-                    <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a>Home</a></button>
-                   <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a>Navicus360</a></button>
+
+                   <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a href="https://www.navicus360.com/login/" target="_blank">Navicus360</a></button>
                     <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a>Contact Us</a></button>
                     <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown"  class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1 " type="button">Menu</a><i class="fa-solid fa-caret-down fa-xl" style="color: #2abb43; padding-left: 5px;"></i>
                     </button>
                     
                     <!-- Dropdown menu -->
                     <div id="multi-dropdown" class="z-10 hidden border-r-2 border-l-2 border-green-500 px-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-full h-screen mt-10 ">
-                        <div class="py-2 text-sm flex text-gray-700 animate-open-menu mx-10" aria-labelledby="multiLevelDropdownButton">
+                        <div class="py-2 text-sm flex space-x-16 text-gray-700 animate-open-menu mx-10" aria-labelledby="multiLevelDropdownButton">
                        
                             <div>
-                                <h2 class="text-xl active:underline visited:underline">Services</h2>
-                                <div class="px-2 border-r border-green-400 h-[80vh]">
-                                    <a class="block px-4 py-2 hover:bg-gray-100 ">dsdfa</a>
-                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdfa</a>
-                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdf</a>
-                                    <a class="block px-4 py-2 hover:bg-gray-100">adsdasd</a>
+                                <h2 class="text-xl active:underline visited:underline font-medium">Services</h2>
+                                <div class="px-2 py-2 border-r border-green-400 h-[80vh] text-green-600">
+                                    <ul class="space-y-5" >
+                                        <h3 class="text-lg font-semibold">Transportation & Fulfilment</h3>
+
+                                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Services.sea_freight')}}">Sea</a></li>
+                                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Services.air_freight')}}">Air</a></li>
+                                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Services.road_freight')}}">Transport & Distribution</a></li>
+                                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Services.FC')}}">Warehousing & Fulfillment</a></li>
+                                       
+
+                                        <h3 class="text-lg text-green-600 font-semibold">Others</h3>
+
+                                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Services.project_cargo')}}">Project Logistics</a></li>
+                                        <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">Customs Clearance</li>
+                                        <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">Courier
+                                        Services</li>
+
+
+                                    </ul>
+                               
                                 </div>
                             </div>       
                         
-                            <div class="">
-                                <h2></h2>
-                                <div class="px-2 border-r border-green-400 h-[80vh]">
-                                    <a class="block px-4 py-2 hover:bg-gray-100 ">dsdfa</a>
-                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdfa</a>
-                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdf</a>
-                                    <a class="block px-4 py-2 hover:bg-gray-100">adsdasd</a>
+                            <div>
+                                <h2 class="text-xl active:underline visited:underline font-medium">Company</h2>
+                                <div class="px-2 py-2 border-r border-green-400 h-[80vh] text-green-600">
+                                        <ul class="space-y-5" >
+                                            <h3 class="text-lg font-semibold">Offshore Global Logistics</h3>
+    
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">About Us</li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Company Policies</li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Sustainability</li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Our Blog</li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Location</li>  
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">People & Culture</li>
+                                            
+        
+                                        </ul>
                                 </div>
                             </div>
-                            <div class="">
-                                <h2></h2>
-                                <div class="px-2 border-r border-green-400 h-[80vh]">
-                                    <a class="block px-4 py-2 hover:bg-gray-100 ">dsdfa</a>
-                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdfa</a>
-                                    <a class="block px-4 py-2 hover:bg-gray-100">dsdf</a>
-                                    <a class="block px-4 py-2 hover:bg-gray-100">adsdasd</a>
+                            <div>
+                                <h2 class="text-xl active:underline visited:underline font-medium">Resources</h2>
+                                <div class="px-2 py-2 border-r border-green-400 h-[80vh] text-green-600">
+                                        <ul class="space-y-5" >
+                                            <h3 class="text-lg font-semibold">Insights</h3>
+
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Company Profile</li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">KEBS Banned Products</li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Related Websites</li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">FAQ</li>  
+                                        </ul>
                                 </div>
                             </div>
+                        
                         </div>
                     </div>
     
@@ -116,45 +144,65 @@
     </header>
    
     <section  class="relative h-[100vh]">
-        <div class="w-[calc(100vw-15px)] h-full absolute  -translate-x-[50%] left-[50%] ">
+        <div class="w-[calc(100vw-15px)] h-full relative -translate-x-[50%] left-[50%] ">
             <!--overlay-->   
-            <!--<div class="absolute top-0 left-0 w-full h-[95vh] z-20 bg-green-800/30"></div>-->
-            <!---->
-                <img class="object-cover w-full h-full z-10" src="{{url_for('static', filename='media/IMG_9944.JPG') }}" alt="Warehouse Forklift">
+            <div class="absolute top-0 left-0 w-full h-full z-20 bg-black/60 animate-zoom-in
+            overflow-hidden"></div>
+            
+            
+            
+                <img class="w-full h-full object-cover animate-zoom-in overflow-hidden" src="{{url_for('static', filename='media/IMG_9930.JPG') }}" alt="Warehouse Forklift">
                   
+                <div class="relative text-right mr-14 font-medium text-3xl -mt-[450px] z-20 space-y-5">
+                    <h2 class="text-slate-200 text-base">Unleash the Full Potential of Your Business</h2>
+                    <h2 class="text-white mt-5 text-4xl font-serif ">Adaptable Logistics Services.<br> Fulfill Your Commitments To<br>Your Clients With Expertise<br>Powered By Technology.</h2>
+                   <div class="space-x-5">
+                    <button class="bg-green-600 text-white text-lg py-3 px-4 rounded-xl">GET QUOTE<i class="fa-solid fa-arrow-right" style="padding-left: 5px;"></i> </button>
+                    <button class="text-white text-lg"><i class="fa-solid fa-phone" style="margin-right: 5px;"></i>+254 (0) 11052245</button>
+                    </div>
                     
+                </div>
         </div>   
       <!---->
-    </section>     
-    <div class="hidden min-[320px]:block -mt-[130px] z-30 2xl:-mt-[200px]">   
-            
-        <div class="mx-5 flex flex-row row-span-3 gap-5 justify-evenly items-center border-2 relative border-green-800 border-solid p-3 text-gray-900 sm:gap-20 lg:w-auto lg:mx-10 md:w-auto md:mx-5  ">
-            <p class="auto-type text-white italic text-xl -mt-[130px] absolute left-0 pb-4 2xl:-mt-[150px]"></p>
-                <div class="bg-green-800 w-36 py-3 rounded-lg lg:w-40 text-center 2xl:w-562xl:p-6  border-2 border-green-700 shadow-2xl max-[500px]:block max-[500px]:-rotate-90 max-[500px]:-right-12 max-[500px]:top-[150px] max-[500px]:fixed max-[500px]:bg-green-800/80  max-[500px]:rounded-none  max-[500px]:w-[140px] max-[500px]:p-2">    
-                    <a  href="{{url_for('quote')}}" class="text-xl font-bold 2xl:text-3xl text-center">GET QUOTE</a>
+    </section>                  
+        <main class="mt-1">      
+            <section>
+                <div class="w-full h-full flex">
+                    <div class="w-[50%] h-[400px] bg-blue-500"></div>
+                    <div class="w-[50%] h-[400px] bg-gray-700 p-14 text-white">
+                        <h1 class="font-semibold">What We Do</h1>
+                        <h2 class="text-2xl font-bold py-6">Designing, Managing, and <br>Optimizing Supply Chains</h2>
+                        <p>Our services improve the flow of goods through ecommerce fulfillment, flexible distribution, warehouse automation, and reverse logistics.</p>
+                        <button class="mt-5 border border-green-500 px-6 py-2 rounded-full font-semibold">Discover Our Services</button>
+                    </div>
                 </div>
-
-                <div class="bg-green-800 p-3 rounded-lg w-36 lg:w-40 text-center 2xl:p-6 2xl:w-52 border-2 border-green-700 shadow-2xl  ">    
-                    <a  href="#serv" class="text-xl font-bold 2xl:text-3xl text-center">SERVICES</a>
+                <div class="w-full h-full flex">
+                    
+                    <div class="w-[50%] h-[400px] bg-white p-14 text-gray-800 ">
+                        <h1 class="font-semibold">Industries We Serve</h1>
+                        <h2 class="text-2xl font-bold py-6">From Ecommerce and Beverages To Pharmaceuticals and Beauty Products</h2>
+                        <p>Our experience across various indstries & end-markets help companies, from high-growth market entrants to global leaders, operate more effeciently.</p>
+                        <button class="mt-5 border bg-green-500 px-6 py-2 rounded-full font-semibold text-white">See the Industries We Serve</button>
+                        
+                    </div>
+                    <div class="w-[50%] h-[400px]">
+                        <video class="w-full h-full object-cover" src="{{url_for('static', filename='media/Industries.mp4')}}" loop autoplay></video>
+                    </div>
+                    
                 </div>
-
-                <div class="bg-green-800  rounded-lg p-3 w-36 text-center lg:w-40 2xl:p-6 2xl:w-52 border-2 border-green-700 shadow-2xl">
-                    <a href="{{url_for('Offices')}}" class="text-xl font-bold 2xl:text-3xl text-center">OFFICES</a>
+                <div class="w-full h-full flex">
+                    <div class="w-[50%] h-[400px] bg-blue-500">
+                        <img class="w-full h-full object-cover" src="{{url_for('static', filename='media/solar.jpeg')}}" />
+                        <!--Add photos from Phenie's Drill day also solar photos-->
+                    </div>
+                    <div class="w-[50%] h-[400px] bg-gray-700 p-14 text-white ">
+                        <h1>What We Value</h1>
+                        <h2 class="text-2xl font-bold py-6">Impacting Our People,Partners & Planet Positively</h2>
+                        <p>We consider environmental and social impacts in all our actions, from creating career opportunities that support diverse teams to optimizing operations for reduced energy use and enhanced environmental sustainability.</p>
+                        <button class="mt-5 border border-green-500 px-6 py-2 rounded-full font-semibold">See Our commitment to ESG</button>
+                    </div>
                 </div>
-        </div>
-        
-    </div>
-             
-        <main>      
-
-                        <div class="flex justify-center items-center gap-10 py-4">
-                            <div class="bg-green-800 rounded-full h-6 w-6"></div>
-                  
-                            <div class="bg-black rounded-full h-6 w-6"></div>
-
-                            <div class="bg-red-800 rounded-full h-6 w-6"></div>
-                  
-                        </div>
+            </section>
                     
                 <section class="bg-white text-xl">
                         <h2 class="font-bold text-center p-5">Offshore Global Logistics; Always here to serve your logistics & <br> supply chain needs!</h2>
@@ -174,64 +222,33 @@
                
         </main>
 
-        <footer class="bg-green-700 inset-x-0 bottom-0 pb-0 w-full text-lg text-white p-5">
-            <section class="max-w-4xl mx-auto flex flex-col pt-16 p-5 md:space-x-20 md:grid md:grid-flow-col md:grid-cols-3">
-               
-                <div>
-                    <h2 class="uppercase font-bold">Give us a Call!!</h2>
-                    <p>
-                        You can call us regarding anything on: +254-111-052-256
-                    </p> 
-                </div>
-                <div>
-                    <h2 class="uppercase font-bold">Email US!!</h2>
-                    <p class="break-words">
-                        Email us your request or complaint at:<br><a href="mailto:sales@offshorelogistics.co.ke">sales@offshorelogistics.co.ke</a>
-                    </p> 
-                </div>
-                <div>
-                    <h2 class="uppercase font-bold">Policy</h2>
-                    <ul class="list-none text-start">       
-                        <li><a href="{{url_for('EnvPolicy')}}">OGL ESG Policy</a></li>
-                        <li><a href="{{url_for('LabourMgt')}}">Labour Management Plan</a></li>
-                        <li><a href="{{url_for('WasteMgt')}}">Waste Management Plan</a></li>
-                        <li><a href="{{url_for('Conduct')}}">Code Of Conduct</a></li>
-                        <li><a href=#>Anti-Corruption Policy</a></li>       
-                    </ul>
-                </div> 
+    <footer class="bg-green-700 inset-x-0 bottom-0 pb-0 w-full text-lg text-white p-5 flex space-x-10">
+        <section class="w-1/3">
+                <a href="#Home" class="2xl:h-[3rem]" ><img src= "{{url_for('static', filename='media/logo_black.png') }}" alt="footer logo"></a>
+            <p class="text-justify"> Our company’s reputation is above all founded on the quality of its people who are highly experienced, professional and dynamic individuals with a driving commitment to customer service. Offshore Global logistics emphasizes versatility and personal service to their customers. We offer specialized services within a niche part of the logistics and supply chain industry in East Africa.</p>
+            <div class="text-md mt-5 space-x-2 italic">
+                Social Media: 
+                <i class="fa-brands fa-linkedin fa-xl" style="color: #262a2e;"></i>
+                <i class="fa-brands fa-facebook fa-xl" style="color: #262a2e;"></i>
+                <i class="fa-brands fa-x-twitter fa-xl" style="color: #262a2e;"></i>
+            </div>
+        </section>
+    
+         <section class="flex flex-col space-y-5">
+            <h2 class="font-semibold mt-9">Contact</h2>
+            <h3 class="font-semibold">Head Office Address</h3>
+            <p>Go Down No.1, Katko<br> Complex, Old Mombasa<br> Road Near SGR Nairobi<br>Terminus</p>
             
-            </section>
-            <section class="mx-auto p-4 flex flex-row gap-32 h-16">
-                <h1>
-                    <a href="#Home" class="2xl:h-[3rem]" ><img src= "{{url_for('static', filename='media/logo_black.png') }}" alt="logo3"></a>
-                </h1>        
-                    <div class="flex-row gap-2 right-10 absolute 2xl:text-2xl">
-                            <p class="text-left font-bold hidden sm:block">FOLLOW US: <br>
-                                <div class="hidden min-[425px]:inline-flex min-[425px]:mr-6">
-                                    <a class="pt-2 pl-2" href="https://twitter.com/OffshoreGlobal2" target="_blank"><!--Twitter-->
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="2xl:h-[3rem]">
-                                            <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/>
-                                        </svg>
-                                    </a>
-                                    <a class="pt-2 pl-2" href="https://www.linkedin.com/company/offshoregloballogisticsltd/" target="_blank"><!--LinkedIn -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="2xl:h-[3rem]">
-                                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
-                                        </svg>
-                                    </a>
-                                    <a class="pt-2 pl-2" href="#"><!--Instagram-->
-                                        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512" class="2xl:h-[3rem]">
-                                            <path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </p>
-                    </div>
-        
-                    </div>
-               </section>
-              <p class="text-center w-full pb-0 py-2 mb-0 text-base min-[375px]:py-3 2xl:text-2xl">&copy;2023 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Offshore Global Logistics</p>
-        
-        </footer>
+        </section>
+        <section class="py-2">
+            <h1 class="font-semibold">Our Location</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.710088580665!2d36.89341127363164!3d-1.3504745986367341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0d378ae0ff27%3A0xa2f86df9a10a1649!2sOffshore%20Global%20Logistics%20Limited%20%26%20Fulfillment%20Centre!5e0!3m2!1sen!2ske!4v1732027704806!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+       
+    </footer>
+    <p class="text-center w-full pb-0 mb-0 text-base min-[375px]:py-3 2xl:text-lg bg-green-700 text-white">&copy;2025 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Offshore Global Logistics</p>
+    
+     
     
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

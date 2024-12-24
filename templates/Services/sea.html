@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="h-full w-full object-cover relative p-5 flex flex-col text-sm">
+  
+    <img class="w-full object-cover h-[80vh]" src="{{url_for('static', filename='media/ship_Freight.jpg')}}">
+    <h2 class="uppercase text-lg text-green-500 p-3 font-bold">Sea Freight</h2>
+    <div class="mx-20">
+    <p class="h-auto w-auto my-2 left-0">
+        We provide time definite, innovative sea freight services for both Full Container Load (FCL) and Less than Container Load (LCL) shipments worldwide. Supported by our world-class office and vast information infrastructure, Offshore Global Logistics sea freight services feature:
+            <ul class="list-disc ml-10 pb-5">
+                <li>Reliability.</li>
+                <li>Access to exceptional services from multiple carriers</li>
+                <li>Container and vessel space during the challenging
+                seasons</li>
+                <li>Single point of contact for all your global needs</li>
+                <li>Local expertise and dedicated customer service</li>
+                <li>Competitive and flexible rates and terms</li>
+                <li>Equipment and space protection with carriers</li>
+            </ul>
+        
+        <span>We have capacity to move cargo from any port around
+        the world.<br>
+        Our Sea Freight Services include:</span>
+        <ul class="ml-10 list-disc">
+            
+            <li>Project Cargo</li>
+            <li>Bulk Cargo</li>
+            <li>Temperature controlled cargo</li>
+            <li>LCL & FCL cargo</li>
+            <li>Automotive logistics (RO-RO)</li>
+            <li>Transshipment cargo</li>
+        </ul>
+
+    </p>
+    </div>
+    
+</div>
+{% endblock %}

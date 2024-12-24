@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="h-full w-full object-cover p-5 flex-col relative text-sm">
+    <h2 class="uppercase text-xl p-3 font-bold">Project Cargo</h2>
+    <img class="w-full object-cover h-[80vh]" src="{{url_for('static', filename='media/cargo.jpg')}}">
+    <p class="h-auto w-auto my-2 left-0">
+        Offshore Global Logistics regularly handles over-dimensional and breakbulk cargos. With over a decade of
+        experience we have perfected management of the flow of time-critical material, supplies, and equipment direct
+        to destination points all over Eastern Africa.
+        Owing to our meticulous pre-planning, we ensure timely execution of project cargo, full cargo visibility and agile
+        responsiveness to potential problems.<br>
+        <strong>Highlights</strong>
+        <ul class=" ml-10 list-disc">
+            <li>RoRo services and special handling for vehicles.</li>
+            <li>In-House Project Team to create load plans, secure equipment, and ensure timely delivery</li>
+            <li>Custom route survey and site survey with state permits and escorts when needed</li>
+            <li>Carefully selected specialized carriers with global, national, regional, and local coverage</li>
+        </ul>
+    </p>
+    </div>
+
+{% endblock %}

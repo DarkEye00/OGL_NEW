@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="h-full w-full object-cover relative p-5 flex-col text-sm">
+    >
+    <img class="w-full object-cover h-[80vh]" src="{{url_for('static', filename='media/Air_freight.jpg')}}">
+    <h2 class="uppercase text-lg text-green-500 p-3 font-bold">Air freight services</h2>
+    <div class="mx-20">
+     
+    <p class="h-auto w-auto my-2 left-0 mx-auto ">
+        Our airfreight services provide three solutions, value, speed
+        and low cost.
+        In order to satisfy your demand for space allocation and
+        competitive rates, we have kept a good relationship with
+        airlines, agents and handling partners for major carriers.
+        This has helped us maintain both peak and off peak
+        consistency in service delivery.
+        For oversize and dangerous cargo transportation by air, we
+        provide professional know-how related to the handling
+        including complete door to door delivery logistics on a
+        global scale.<br>
+        Our Airfreight Services include: 
+        <ul class="ml-10 list-disc ">
+            <li>General Cargo</li>
+            <li>Perishable Logistics</li>
+            <li>Fashion Logistics</li>
+            <li>Healthcare and Pharmaceutical Logistics</li>
+            <li>Dangerous cargo</li>
+            <li>Air Charter Services</li>
+            <li>Transshipment Cargo</li>
+        </ul>
+    </p>
+    </div>
+    
+</div>
+{% endblock %}
