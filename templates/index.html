@@ -165,10 +165,31 @@
         </div>   
       <!---->
     </section>                  
-        <main class="mt-1">      
+        <main class="mt-1">   
+           <section>
+                <h1 class="ml-10 text-green-500 font-semibold text-2xl underline mt-6">Celebrating A Milestone Together - OGL🤝HAYAT-KE</h1>
+            <div class="w-full h-[400px] flex mb-10">
+                <div id="particles-js" class="w-[50%] h-[400px] mt-[100px] flex flex-col justify-center items-center mx-10">
+                   
+                    <img class="w-[200px] h-[200px] pb-5 object-cover mt-10" src="{{url_for('static', filename='media/IMG_8706.jpg')}}" />
+                    
+
+                    <blockquote class="italic before:content-[open-quote] before:text-3xl before:text-green-800 after:content-[close-quote] after:text-3xl after:text-green-800">I can't believe it's one year. It's been quite a journey for us, and the journey we've taken with this customer just exemplifies the DNA of offshore global logistics to bring in the best services for the best products, and to make sure that they get to the markets at the first product and the right quality... </blockquote>
+                    <p class="text-green-500"> ~ Nicholas Kaluma, <span>Managing Director <br>Offshore Global Logistics</span> </p>
+
+                    
+                </div>
+                <div class="w-[50%] h-[400px] mr-2">
+                    <video loop autoplay controls class="w-full h-full object-cover" src="{{url_for('static', filename='media/HAYAT.mp4')}}" ></video>
+                </div>
+           </div> 
+           </section>
             <section>
                 <div class="w-full h-full flex">
-                    <div class="w-[50%] h-[400px] bg-blue-500"></div>
+                    <div class="w-[50%] h-[400px] bg-blue-500">
+                        <img class="w-full h-full object-cover" src="{{url_for('static', filename='media/IMG_9919.JPG')}}" />
+                         
+                    </div>
                     <div class="w-[50%] h-[400px] bg-gray-700 p-14 text-white">
                         <h1 class="font-semibold">What We Do</h1>
                         <h2 class="text-2xl font-bold py-6">Designing, Managing, and <br>Optimizing Supply Chains</h2>
@@ -186,7 +207,7 @@
                         
                     </div>
                     <div class="w-[50%] h-[400px]">
-                        <video class="w-full h-full object-cover" src="{{url_for('static', filename='media/Industries.mp4')}}" loop autoplay></video>
+                        <video loop autoplay muted class="w-full h-full object-cover" src="{{url_for('static', filename='media/Industries.mp4')}}" ></video>
                     </div>
                     
                 </div>
@@ -235,10 +256,14 @@
         </section>
     
          <section class="flex flex-col space-y-5">
-            <h2 class="font-semibold mt-9">Contact</h2>
-            <h3 class="font-semibold">Head Office Address</h3>
-            <p>Go Down No.1, Katko<br> Complex, Old Mombasa<br> Road Near SGR Nairobi<br>Terminus</p>
-            
+            <h2 class="font-semibold mt-9">Quick Links</h2>
+            <ul>
+                <a><li>About Us</li></a>
+                <a><li>Our Services</li></a>
+                <a><li>Get In Touch</li></a>
+                <a><li>FAQ</li></a>
+
+            </ul>
         </section>
         <section class="py-2">
             <h1 class="font-semibold">Our Location</h1>
@@ -253,6 +278,73 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 100, // Number of particles
+              density: {
+                enable: true,
+                value_area: 800 // Adjust density of particles
+              }
+            },
+            color: {
+              value: ["#58ef13", "#FFC300", "#ff0000", "#ffc000"] // Confetti colors
+            },
+            shape: {
+              type: ["circle", "polygon", "star"], // Shapes of particles
+              polygon: {
+                nb_sides: 5 // Number of sides for polygons
+              }
+            },
+            opacity: {
+              value: 0.8, // Opacity of particles
+              random: true
+            },
+            size: {
+              value: 10, // Particle size
+              random: true
+            },
+            line_linked: {
+              enable: false // Disable connecting lines
+            },
+            move: {
+              enable: true,
+              speed: 5, // Speed of movement
+              direction: "bottom", // Direction of movement
+              random: false,
+              straight: false,
+              out_mode: "out", // Particles disappear out of bounds
+              bounce: false
+            }
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse" // Particles move away when hovered
+              },
+              onclick: {
+                enable: true,
+                mode: "push" // Adds particles on click
+              }
+            },
+            modes: {
+              repulse: {
+                distance: 100, // Distance for hover effect
+                duration: 0.4
+              },
+              push: {
+                particles_nb: 4 // Particles added on click
+              }
+            }
+          },
+          retina_detect: true
+        });
+      </script>
+      
       <script>
         var typed = new Typed (".auto-type", 
             {
