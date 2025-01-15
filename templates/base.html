@@ -33,10 +33,10 @@
                 <button class="text-3xl md:hidden focus:outline-none" id="hamburger-button">
                     &#9776;
                 </button>
-               
+              
                 <nav class="hidden md:block mt-2 space-x-5 font-normal text-md" aria-label="main">
 
-                   <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a>Navicus360</a></button>
+                   <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a href="https://www.navicus360.com/login/" target="_blank">Navicus360</a></button>
                     <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a>Contact Us</a></button>
                     <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown"  class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1 " type="button">Menu</a><i class="fa-solid fa-caret-down fa-xl" style="color: #2abb43; padding-left: 5px;"></i>
                     </button>
@@ -55,13 +55,14 @@
                                         <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Services.air_freight')}}">Air</a></li>
                                         <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Services.road_freight')}}">Transport & Distribution</a></li>
                                         <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Services.FC')}}">Warehousing & Fulfillment</a></li>
-                                        
-                                        <h3 class="text-lg text-green-600 font-semibold">Other</h3>
+                                       
 
-                                        <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">Project Logistics</li>
+                                        <h3 class="text-lg text-green-600 font-semibold">Others</h3>
+
+                                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Services.project_cargo')}}">Project Logistics</a></li>
                                         <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">Customs Clearance</li>
                                         <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">Courier
-                                            Services</li>
+                                        Services</li>
 
 
                                     </ul>
@@ -75,8 +76,36 @@
                                         <ul class="space-y-5" >
                                             <h3 class="text-lg font-semibold">Offshore Global Logistics</h3>
     
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">About Us</li>
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Sustainability</li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('About_Us')}}">About Us</a></li>
+                                            
+                                            <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out text-center inline-flex items-center" type="button">Company Policies<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                                </svg>
+                                                </button>
+                                                
+                                                <!-- Dropdown menu -->
+                                                <div id="dropdownDelay" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                                                    <li>
+                                                        <a href="{{url_for('EnvPolicy')}}" class="hover:underline block px-4 py-2 hover:text-green-500">Environmental Policy</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{url_for('LabourMgt')}}" class="hover:underline block px-4 py-2 hover:text-green-500">Labor Management</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{url_for('WasteMgt')}}" class="block px-4 py-2 hover:text-green-500">Waste Management</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{url_for('Conduct')}}" class="block px-4 py-2 hover:text-green-500">Code of Conduct</a>
+                                                    </li>
+                                                    
+                                                    <li>
+                                                        <a href="{{url_for('Corruption')}}" class="block px-4 py-2 hover:text-green-500">Anti-Corruption Policy</a>
+                                                    </li>
+                                                    </ul>
+                                                </div>
+                                                
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Sustainability')}}">Sustainability</a></li>
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Our Blog</li>
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Location</li>  
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">People & Culture</li>
@@ -90,7 +119,8 @@
                                 <div class="px-2 py-2 border-r border-green-400 h-[80vh] text-green-600">
                                         <ul class="space-y-5" >
                                             <h3 class="text-lg font-semibold">Insights</h3>
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Policies</li>
+
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Company Profile</li>
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">KEBS Banned Products</li>
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Related Websites</li>
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">FAQ</li>  

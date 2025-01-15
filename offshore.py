@@ -78,9 +78,9 @@ def diversity():
 def training():
     return render_template("training.html")
 
-@app.route('/Quote/')
-def quote():
-    return render_template("quote.html")
+@app.route('/PC/')
+def PC():
+    return render_template("People.html")
 
 
 

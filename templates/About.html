@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-<section class="mt-20 text-xl">
+<section class="mt-20 text-sm">
 
     <div class="w-[inherit]">
       <img
@@ -14,7 +14,7 @@
       </h1>
     </div>
     <div
-      class="bg-white mx-14 relative -mt-12 text-xl p-5 text-justify max-md:text-left"
+      class="bg-white mx-14 relative -mt-12 text-sm p-5 text-justify max-md:text-left"
     >
       <p>
         Founded in the year 2014, Offshore Global Logistics is a wold-class
@@ -31,54 +31,44 @@
     </div>
   
 </section>
-<section class="mx-20 flex flex-col my-10">
-  <div class="flex flex-row relative max-lg:flex-col " data-aos="fade-left">
-    <h2
-      class="absolute text-xl font-bold bg-gray-400/50 rounded-md ml-8 p-2 mt-2"
-    >
-      Our Vision
-    </h2>
-    <img
+<section>
+  <div class="flex justify-between bg-[rgb(244,244,244)] mx-10" data-aos="flip-down">
+    <div class="w-[300px]">
+      <h2 class="text-green-500 text-xl font-semibold p-2">Our Vision</h2>
+      <img
       src="{{url_for('static', filename='media/sunset.jpg')}}"
-      class="md:h-[300px] max-md:object-cover"
+      class="md:h-[300px] max-md:object-cover bg-blue-500"
     />
     <p
-      class="p-5 text-2xl flex justify-center items-center text-left max-[425px]:text-lg"
-    >
-      To be the premier supply chain solutions partner in East Africa committed
-      to supply chain excellence while embodying the aspirations of our
-      stakeholders.
-    </p>
-  </div>
-  <div class="flex flex-row-reverse mt-5 max-lg:flex-col" data-aos="fade-right">
-    <h2
-      class="absolute rounded-md bg-gray-400/50 ml-8 mt-2 p-2 font-bold text-xl"
-    >
-      Our Mission
-    </h2>
-    <img
+    class="p-5 flex justify-center items-center text-left max-[425px]:text-lg"
+  >
+    To be the premier supply chain solutions partner in East Africa committed
+    to supply chain excellence while embodying the aspirations of our
+    stakeholders.
+  </p>
+    
+    </div>
+    <div  class="w-[300px]">
+      <h2 class="text-green-500 text-xl font-semibold p-2">Our Mission</h2>
+      <img
       src="{{url_for('static',filename='media/dart.jpg')}}"
       class="md:h-[300px] max-md:object-cover"
     />
     <p
-      class="text-2xl p-5 flex justify-center items-center text-left max-[425px]:text-lg"
+      class="p-5 flex justify-center items-center text-left max-[425px]:text-lg"
     >
       To provide innovative supply chain solutions while incorporating the goals
       of our stakeholders through creation of value.
     </p>
-  </div>
-  <div class="flex flex-row mt-5 max-lg:flex-col" data-aos="fade-left">
-    <h2
-      class="absolute text-xl rounded-md bg-gray-400/50 ml-8 mt-2 font-bold p-2"
-    >
-      Core Values
-    </h2>
-    <img
+    </div>
+    <div  class="w-[300px]">
+      <h2 class="text-green-500 text-xl font-semibold p-2">Core Values</h2>
+      <img
       src="{{url_for('static', filename='media/Diamond.jpg')}}"
       class="md:h-[300px] max-md:object-cover"
     />
     <ul
-      class="ml-10 mt-16 list-disc text-2xl max-md:mt-5 text-left max-[425px]:text-lg"
+      class="ml-10 list-disc p-5 text-left"
     >
       <li>Agility</li>
       <li>Innovation</li>
@@ -86,6 +76,9 @@
       <li>Professionalism</li>
       <li>Integrity</li>
     </ul>
+    
+    </div>
+    
   </div>
 </section>
 
