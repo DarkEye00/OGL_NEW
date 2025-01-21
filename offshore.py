@@ -1,11 +1,11 @@
 from flask import Flask, render_template, request
-from services.routes import services_blueprint
-#from flask_frozen import Freezer
+#from services.routes import services_blueprint
+from flask_frozen import Freezer
 
 
 app = Flask(__name__)
 
-app.register_blueprint(services_blueprint, url_prefix='/Services')
+#app.register_blueprint(services_blueprint, url_prefix='/Services')
 
 #freezer = Freezer(app)
 app.secret_key = '0ff$hor3 k3y'
@@ -26,17 +26,10 @@ def EnvPolicy():
 def LabourMgt():
     return render_template("Labormgt.html")
 
-@app.route('/Waste-management-plan/')
-def WasteMgt():
-    return render_template("WasteMgt.html")
 
 @app.route('/About_Us/')
 def About_Us():
     return render_template("About.html")
-
-@app.route('/Speak_Up/')
-def Speak():
-    return render_template("speak.html")
  
 @app.route('/Sustainability/')
 def Sustainability():
@@ -49,10 +42,6 @@ def Careers():
 @app.route('/Code_of_Conduct/')
 def Conduct():
     return render_template("conduct.html")
-
-@app.route('/Services/')
-def Services():
-    return render_template("Services.html")
 
 @app.route('/Corruption-policy/')
 def Corruption():
@@ -81,8 +70,25 @@ def training():
 @app.route('/PC/')
 def PC():
     return render_template("People.html")
+@app.route('/Services/Sea-Freight/')
+def sea_freight():
+    return render_template ("Services/sea.html")
 
+@app.route('/Services/Air-Freight/')
+def air_freight():
+    return render_template ("Services/air.html")
+
+@app.route('/Services/Warehousing-&-Fulfillment/')
+def FC():
+    return render_template ("Services/fulfillment.html")
+
+@app.route('/Services/Road-Freight/')
+def road_freight():
+    return render_template ("Services/road.html")
+@app.route('/Services/Project-Cargo/')
+def project_cargo():
+    return render_template ("Services/project.html")
 
 
 if __name__ == ("__main__"):
-   app.run(debug=True)
+  app.run(debug=True)   
