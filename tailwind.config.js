@@ -16,11 +16,20 @@ module.exports = {
           "100%": {
             transform: "scale(1.2)" /* Zoom in 20% */
           }
+        },
+        "spin":{
+          "from": {
+            transform: "rotate(0deg)"
+        },
+        "to": {
+            transform: "rotate(180deg)"
+        }
         }
       },
       animation: {
         "open-menu": "open-menu 1s ease-in-out forwards",
         "zoom-in": "zoom-in 10s ease-in-out ",
+        "spin-slow": "spin 15s linear infinite ease-in-out",
       },
     },
   },

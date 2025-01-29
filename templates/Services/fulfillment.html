@@ -1,10 +1,42 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="h-full w-full object-cover p-5 flex-col relative text-sm">
+<div class="h-full w-full object-cover p-5 relative text-sm">
    
-    <h2 class="uppercase text-lg text-green-500 p-3 font-bold">Warehousing & Fulfillment</h2>
-    <div class="mx-20">
+    <div class="mx-20 mt-20">
+        <h2 class="uppercase text-lg text-green-500 p-3 font-bold">Warehousing & Fulfillment</h2>
+        <div id="default-carousel" class="relative w-full p-5" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                 <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{url_for('static', filename='media/IMG_9919.webp')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="MHE operator">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{url_for('static', filename='media/IMG_8617.JPG')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Warehouse Team">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{url_for('static', filename='media/IMG_8091.webp')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{url_for('static', filename='media/IMG_8274.webp')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{url_for('static', filename='media/IMG_8275.webp')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="{{url_for('static', filename='media/IMG_8278.webp')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="{{url_for('static', filename='media/IMG_8275.webp')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>         
+        
+          </div>
     <p class="h-auto w-auto my-2 left-0">
         Offshore Global Logistics continuously strives at being recognized as
         the best logistics and courier service provider in Kenya. We achieve this

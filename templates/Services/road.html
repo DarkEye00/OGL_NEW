@@ -1,31 +1,37 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="h-full w-full object-cover p-5 flex-col relative mt-12 text-sm">
+<section class="h-full w-full object-cover p-5 flex-col relative mt-12 text-sm">
     
-    <img class="w-full object-cover h-[80vh]" src="{{url_for('static', filename='media/road.webp')}}">
-    <h2 class="uppercase text-lg text-green-500 p-3 font-bold">Transport and Distribution</h2>
-    <div class="mx-20">
-    <p class="h-auto w-auto my-2 left-0">
-        Our transport service is all about efficiency, cost-effectiveness, reliability
-        and sustainable transport solution. We take into account our clients'
-        commodity types and their needs and formulate tailored solutions.
-        We ensure timely and safe transportation as well as delivery of their
-        products.
-        <br>
-        <strong>Our Specialties include</strong>
-        <ul class="ml-10 list-disc">
-            <li>Own operated office in Dar es salaam(Tanzania) that provides presence to facilitate transit to all the 8 countries bordering Tz.</li>
-            <li>Inhouse customs/border clearance, fully lincesed to provide customs declarations at the border.</li>
-            <li>Ability to transport all kinds of cargo(FTL, LTL, General Cargo, Temperature controlled cargo,Oversize/Out of gauge cargo, Car carrier services, Liquid cargo(Tanker shipments), Pharmaceuticals)</li>  
-            <li>Tracking and live updates</li>
-            <li>Safe and timely Delivery</li>
-            <li>Door to door delivery</li>
-            <li>Prompt Communication</li>
-            <li>Need-based custom-made trailers/trucks</li>
-            <li>Presence at all major border points in Kenya.</li>
-            <li>Contracts with more than 2,000+ carriers to ensure capacity, even in peak season.</li>
-        </ul>
-        <br>
+    <div class="flex ">
+        <img class="w-[500px] h-[500px] object-cover " src="{{url_for('static', filename='media/road.webp')}}">
+        <div class=" mx-10">
+            <h2 class="uppercase text-lg text-green-500 font-bold">Transport and Distribution</h2>
+            <p class="h-auto w-auto my-2 left-0">
+                Our transport service is all about efficiency, cost-effectiveness, reliability
+                and sustainable transport solution. We take into account our clients'
+                commodity types and their needs and formulate tailored solutions.
+                We ensure timely and safe transportation as well as delivery of their
+                products.
+                <br>
+                <strong>Our Specialties include</strong>
+                <ul class="ml-10 list-disc">
+                    <li>Own operated office in Dar es salaam(Tanzania) that provides presence to facilitate transit to all the 8 countries bordering Tz.</li>
+                    <li>Inhouse customs/border clearance, fully lincesed to provide customs declarations at the border.</li>
+                    <li>Ability to transport all kinds of cargo(FTL, LTL, General Cargo, Temperature controlled cargo,Oversize/Out of gauge cargo, Car carrier services, Liquid cargo(Tanker shipments), Pharmaceuticals)</li>  
+                    <li>Tracking and live updates</li>
+                    <li>Safe and timely Delivery</li>
+                    <li>Door to door delivery</li>
+                    <li>Prompt Communication</li>
+                    <li>Need-based custom-made trailers/trucks</li>
+                    <li>Presence at all major border points in Kenya.</li>
+                    <li>Contracts with more than 2,000+ carriers to ensure capacity, even in peak season.</li>
+                </ul>
+            </p>
+            </div>
+    </div>
+
+    <div class="mt-5">
+        <p>
 
         <strong>We offer:</strong>
             <ul class="list-disc ml-10">
@@ -42,6 +48,7 @@
                     trucks.</li>
             </ul>
     </p>
+    </div>
     
-</div>
+</section>
 {% endblock %}
