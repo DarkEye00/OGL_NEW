@@ -51,21 +51,14 @@ def Corruption():
 def Offices():
     return render_template("contact.html")
 
-@app.route('/Careers/our-culture/')
-def culture():
-    return render_template("culture.html")
-
 @app.route('/Careers/join-us/')
 def jobs():
     return render_template("Application.html")
 
-@app.route('/Careers/Diversity-&-Inclusion/')
-def diversity():
-    return render_template("diversity.html")
 
-@app.route('/Careers/Training/')
-def training():
-    return render_template("training.html")
+@app.route('/Careers/')
+def careers():
+    return render_template("career.html")
 
 @app.route('/People-&-Culture/')
 def PC():
@@ -88,7 +81,17 @@ def road_freight():
 @app.route('/Services/Project-Cargo/')
 def project_cargo():
     return render_template ("Services/project.html")
+@app.route('/Services/Customs/')
+def customs():
+    return render_template ("Services/Customs.html")
 
+@app.route('/FAQs/')
+def faqs():
+    return render_template ("faq.html")
+
+@app.route('/Kebs-Banned-Products/')
+def kebs():
+    return render_template ("faq.html")
 
 if __name__ == ("__main__"):
   app.run(debug=True)   

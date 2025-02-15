@@ -20,7 +20,7 @@
  
 <body class="min-h-screen w-full bg-[#fdfdfd] overflow-clip font-sans">
     <header class="bg-white fixed top-0 z-[50] w-full ">
-        <section class="max-w-5xl p-2 flex justify-between sm:w-auto 2xl:ml-[30rem]">
+        <section class="w-full mr-10 p-2 flex justify-between sm:w-auto 2xl:ml-[30rem]">
             <a href="{{url_for('index')}}">
                 <img  class="w-[140px]" src="{{url_for('static', filename='media/logo5.png' )}}" alt="logo"></a>
             <div>
@@ -28,11 +28,9 @@
                     &#9776;
                 </button>
               
-                <nav class="hidden md:block mt-2 space-x-5 font-normal text-md" aria-label="main">
+                <nav class="hidden md:block mt-2 space-x-5 font-normal text-md " aria-label="main">
 
-                   <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a href="https://www.navicus360.com/login/" target="_blank">Navicus360</a></button>
-                    <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a>Contact Us</a></button>
-                    <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown"  class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1 " type="button">Menu</a><i class="fa-solid fa-caret-down fa-xl" style="color: #2abb43; padding-left: 5px;"></i>
+                    <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown"  class="hover:text-green-500 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1 " type="button">Menu</a><i class="fa-solid fa-caret-down fa-xl" style="color: #2abb43; padding-left: 5px;"></i>
                     </button>
                     
                     <!-- Dropdown menu -->
@@ -97,9 +95,10 @@
                                                 </div>
                                                 
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Sustainability')}}">Sustainability</a></li>
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Our Blog</li>
+                            
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Location</li>  
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out"><a href="{{url_for('Sustainability')}}">People & Culture<a></a></li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out"><a href="{{url_for('PC')}}">People & Culture</a></li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out"><a href="{{url_for('careers')}}" >Careers</a></li>
                                             
         
                                         </ul>
@@ -112,15 +111,17 @@
                                             <h3 class="text-lg font-semibold">Insights</h3>
 
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Company Profile</li>
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">KEBS Banned Products</li>
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Related Websites</li>
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">FAQ</li>  
-                                        </ul>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('kebs')}}">KEBS Banned Products</a></li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('faqs')}}">FAQ</a></li>  
                                 </div>
                             </div>
+
                         
                         </div>
                     </div>
+                    
+                    <button class="hover:text-green-500 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a href="{{url_for('Offices')}}">Contact Us <i class="fa-regular fa-envelope fa-lg px-1" style="color: #000000;"></i></a></button>
+                    <button class="hover:text-green-500 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1 px-5"><a href="https://www.navicus360.com/login/" target="_blank">Navicus360</a></button> 
     
                     
                 </nav>
@@ -133,26 +134,41 @@
             <button class="text-6xl self-end px-6 ">
                 &times;
             </button>
-            <nav class="flex flex-col min-h-screen items-center py-6" aria-label="mobile-menu">
-                <a href="{{url_for('index')}}" class="w-full text-center hover:opacity-80 py-3">
+            <nav class="flex flex-col min-h-screen items-center py-6 text-gray-600" aria-label="mobile-menu">
+                <a href="{{url_for('index')}}" class="w-full text-center hover:text-black py-3">
                     HOME
                 </a>
-                <a href="{{url_for('About_Us')}}" class="w-full text-center  hover:opacity-80 py-3">
+                <a href="{{url_for('About_Us')}}" class="w-full text-center hover:text-black py-3">
                     ABOUT US
                 </a>
-                <a href="#" class="w-full text-center hover:opacity-80 py-3">
-                    SERVICES
-                </a>
-                <a href="{{url_for('Sustainability')}}" class="w-full text-center hover:opacity-80 py-3">
+                
+            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="w-full text-center hover:text-black py-3" type="button">SERVICES <i class="fa-solid fa-caret-down" style="color: #000000;"></i>
+                </button>
+                
+                <!-- Dropdown menu -->
+                <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
+                    <ul class="text-sm text-gray-700 dark:text-gray-200 space-y-4 p-2"  aria-labelledby="dropdownHoverButton">
+                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline hover:text-green-500 ease-in-out"><a href="{{url_for('sea_freight')}}">Sea</a></li>
+                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('air_freight')}}">Air</a></li>
+                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('road_freight')}}">Transport & Distribution</a></li>
+                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('FC')}}">Warehousing & Fulfillment</a></li>
+                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('project_cargo')}}">Project Logistics</a></li>
+                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">Customs Clearance</li>
+                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">Courier                                        Services</li>
+                       
+                    </ul>
+                </div>
+    
+                <a href="{{url_for('Sustainability')}}" class="w-full text-center hover:text-black py-3">
                     SUSTAINABILITY
                 </a>
-                <a href="#" class="w-full text-center hover:opacity-80 py-3">
+                <a href="#" class="w-full text-center hover:text-black py-3">
                     NEWS
                 </a>
-                <a href="{{url_for('Careers')}}" class="w-full text-center hover:opacity-80 py-3">
+                <a href="{{url_for('Careers')}}" class="w-full text-center hover:text-black py-3">
                     CAREERS
                 </a>
-                <a href="#" class="w-full text-center hover:opacity-80 py-3">
+                <a href="#" class="w-full text-center hover:text-black py-3">
                     SPEAK UP
                 </a>
 
@@ -237,17 +253,18 @@
                         <h1>What We Value</h1>
                         <h2 class="text-base font-bold py-6 md:2xl">Impacting Our People,Partners & Planet Positively</h2>
                         <p>We consider environmental and social impacts in all our actions, from creating career opportunities that support diverse teams to optimizing operations for reduced energy use and enhanced environmental sustainability.</p>
-                        <button class="mt-5 border border-green-500 px-6 py-2 rounded-full font-semibold">See Our commitment to ESG</button>
+                        <a href="{{url_for('Sustainability')}}"><button class="mt-5 border border-green-500 px-6 py-2 rounded-full font-semibold">See Our commitment to ESG</button></a>
                     </div>
                 </div>
             </section>
             <section>
-                <div class="p-14 text-justify">
+                <div class="p-14">
                     <h1 class="text-green-500 font-semibold text-2xl md:text-3xl">What is Navicus360 ?</h1>
-                    <div class="flex flex-row-reverse items-center space-x-10 text-base font-normal">
-                        <img class="w-[400px] h-[400px] rounded-full shadow-2xl" src="{{url_for('static', filename='media/Navi.webp')}}"  />
+                    
+                    <div class="flex flex-col-reverse justify-center items-center py-10 text-base font-normal md:flex-row-reverse">
+                        <img class="w-[400px] h-[400px] rounded-full shadow-2xl hidden md:block" src="{{url_for('static', filename='media/Navi.webp')}}"  />
                     <p>
-                        Our innovative system, Navicus360, revolutionizes the shipping experience by providing customers with unparalleled visibility into their products throughout the entire shipping process. With Navicus360, customers can effortlessly track their shipments in real-time, receiving instant updates on the movement and location of their goods. This ensures complete transparency and peace of mind, enabling businesses and individuals to stay informed every step of the way. Whether it's knowing the exact transit location or receiving alerts on estimated delivery times, Navicus360 empowers our customers with the information they need to stay ahead.</p>
+                        Our innovative system, Navicus360, revolutionizes your shipping experience by providing unparalleled visibility into your products throughout the entire shipping process. With Navicus360, you can effortlessly track their shipments in real-time, receiving instant updates on the movement and location of their goods. This ensures complete transparency and peace of mind, enabling businesses and individuals to stay informed every step of the way. Whether it's knowing the exact transit location or receiving alerts on estimated delivery times, Navicus360 empowers our customers with the information they need to stay ahead.</p>
                     </div>
                 </div>
             </section>
@@ -268,39 +285,37 @@
                 </section>
                
         </main>
-
-    <footer class="bg-green-700 inset-x-0 bottom-0 pb-0 w-full text-lg text-white p-1 md:p-5 flex flex-col md:justify-between md:flex-row md:space-x-10">
-        <section class="md:w-1/3">
-                <a href="#Home" class="2xl:h-[3rem]" ><img src= "{{url_for('static', filename='media/logo_black.png') }}" alt="footer logo"></a>
-            <p class="text-left lg:text-justify text-sm md:text-lg"> Our company’s reputation is above all founded on the quality of its people who are highly experienced, professional and dynamic individuals with a driving commitment to customer service. Offshore Global logistics emphasizes versatility and personal service to their customers. We offer specialized services within a niche part of the logistics and supply chain industry in East Africa.</p>
-            <div class="text-sm md:text-lg mt-5 space-x-2 italic">
-                Social Media: 
-                <i class="fa-brands fa-linkedin fa-lg" style="color: #262a2e;"></i>
-                <i class="fa-brands fa-facebook fa-lg" style="color: #262a2e;"></i>
-                <i class="fa-brands fa-x-twitter fa-lg" style="color: #262a2e;"></i>
-            </div>
-        </section>
+        <footer class="bg-green-700 inset-x-0 bottom-0 pb-0 w-full text-lg text-white p-5 flex flex-col md:flex-row justify-center md:space-x-16">
+            <section class="md:w-1/3">
+                    <a href="#Home" class="2xl:h-[3rem]" ><img src= "{{url_for('static', filename='media/logo_black.png') }}" alt="footer logo"></a>
+                <p class="text-justify"> Our company’s reputation is above all founded on the quality of its people who are highly experienced, professional and dynamic individuals with a driving commitment to customer service. Offshore Global logistics emphasizes versatility and personal service to their customers. We offer specialized services within a niche part of the logistics and supply chain industry in East Africa.</p>
+                <div class="text-md mt-5 space-x-2 italic">
+                    Social Media: 
+                    <i class="fa-brands fa-linkedin fa-xl" style="color: #262a2e;"></i>
+                    <i class="fa-brands fa-facebook fa-xl" style="color: #262a2e;"></i>
+                    <i class="fa-brands fa-x-twitter fa-xl" style="color: #262a2e;"></i>
+                </div>
+            </section>
+        
+             <section class="flex flex-col space-y-2 md:space-y-5">
+                <h2 class="font-semibold">Quick Links</h2>
+                <ul>
+                    <a><li>About Us</li></a>
+                    <a><li>Our Services</li></a>
+                    <a><li>Get In Touch</li></a>
+                    <a><li>FAQ</li></a>
     
-         <section class="flex flex-col md:space-y-5 text-sm md:text-lg">
-            <h1 class="font-semibold mt-9">Quick Links</h1>
-            <ul class="list-disc">
-                <a><li>About Us</li></a>
-                <a><li>Our Services</li></a>
-                <a><li>Get In Touch</li></a>
-                <a><li>FAQ</li></a>
-
-            </ul>
-        </section>
-        <section class="py-2">
-            <h1 class="font-semibold">Our Location</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.710088580665!2d36.89341127363164!3d-1.3504745986367341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0d378ae0ff27%3A0xa2f86df9a10a1649!2sOffshore%20Global%20Logistics%20Limited%20%26%20Fulfillment%20Centre!5e0!3m2!1sen!2ske!4v1732027704806!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-       
-    </footer>
-    <p class="text-center w-full pb-0 mb-0 text-base min-[375px]:py-3 2xl:text-lg bg-green-700 text-white">&copy;2025 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Offshore Global Logistics</p>
-    
-     
-    
+                </ul>
+            </section>
+            <section class="">
+                <h1 class="font-bold text-white">Our Location</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.710088580665!2d36.89341127363164!3d-1.3504745986367341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0d378ae0ff27%3A0xa2f86df9a10a1649!2sOffshore%20Global%20Logistics%20Limited%20%26%20Fulfillment%20Centre!5e0!3m2!1sen!2ske!4v1732027704806!5m2!1sen!2ske" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+           
+        </footer>
+        <p class="text-center w-full pb-0 mb-0 px-4 text-base min-[375px]:py-5 2xl:text-lg bg-green-700 text-white">&copy;2025 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Offshore Global Logistics</p>
+        
+            
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

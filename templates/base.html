@@ -4,6 +4,7 @@
         <title>Offshore Global Logistics</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Offshore Global Logistics provides businesses with timely logistics services including air, road and sea freights, customs clearance and warehousing solutions in Kenya and across Africa."/>
+        <meta name="keywords" contents="customs clearance, import/export regulations, international trade, duties and taxes, freight forwarding, customs brokers, global supply chain" />
         <meta name="keywords" content="Logistics company in Kenya">
         <meta name="keywords" content="Warehousing solutions in Kenya">
         <meta name="keywords" content="Customs Clearance companies in East Africa">
@@ -26,7 +27,7 @@
     
 <body class="min-h-screen w-full bg-white overflow-clip font-sans">
     <header class="bg-white fixed top-0 z-[50] w-full ">
-        <section class="max-w-5xl p-2 flex justify-between sm:w-auto 2xl:ml-[30rem]">
+        <section class="w-full mr-10 p-2 flex justify-between sm:w-auto 2xl:ml-[30rem]">
             <a href="{{url_for('index')}}">
                 <img  class="w-[140px]" src="{{url_for('static', filename='media/logo5.png' )}}" alt="logo"></a>
             <div>
@@ -34,11 +35,9 @@
                     &#9776;
                 </button>
               
-                <nav class="hidden md:block mt-2 space-x-5 font-normal text-md" aria-label="main">
+                <nav class="hidden md:block mt-2 space-x-5 font-normal text-md " aria-label="main">
 
-                   <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a href="https://www.navicus360.com/login/" target="_blank">Navicus360</a></button>
-                    <button class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a>Contact Us</a></button>
-                    <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown"  class="hover:text-green-900 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1 " type="button">Menu</a><i class="fa-solid fa-caret-down fa-xl" style="color: #2abb43; padding-left: 5px;"></i>
+                    <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown"  class="hover:text-green-500 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1 " type="button">Menu</a><i class="fa-solid fa-caret-down fa-xl" style="color: #2abb43; padding-left: 5px;"></i>
                     </button>
                     
                     <!-- Dropdown menu -->
@@ -105,7 +104,8 @@
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('Sustainability')}}">Sustainability</a></li>
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Our Blog</li>
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Location</li>  
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">People & Culture</li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out"><a href="{{url_for('PC')}}">People & Culture</a></li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out"><a href="{{url_for('careers')}}" >Careers</a></li>
                                             
         
                                         </ul>
@@ -118,15 +118,17 @@
                                             <h3 class="text-lg font-semibold">Insights</h3>
 
                                             <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Company Profile</li>
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">KEBS Banned Products</li>
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">Related Websites</li>
-                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out">FAQ</li>  
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('kebs')}}">KEBS Banned Products</a></li>
+                                            <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('faqs')}}">FAQ</a></li>  
                                         </ul>
                                 </div>
                             </div>
+
                         
                         </div>
                     </div>
+                    <button class="hover:text-green-500 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1"><a href="{{url_for('Offices')}}">Contact Us <i class="fa-regular fa-envelope fa-lg px-1" style="color: #000000;"></i></a></button>
+                    <button class="hover:text-green-500 hover:font-medium transition ease-in-out delay-100 hover:translate-y-1 px-5"><a href="https://www.navicus360.com/login/" target="_blank">Navicus360</a></button> 
     
                     
                 </nav>
@@ -151,9 +153,6 @@
                 </a>
                 <a href="{{url_for('Sustainability')}}" class="w-full text-center hover:opacity-80 py-3">
                     SUSTAINABILITY
-                </a>
-                <a href="#" class="w-full text-center hover:opacity-80 py-3">
-                    NEWS
                 </a>
                 <a href="{{url_for('Careers')}}" class="w-full text-center hover:opacity-80 py-3">
                     CAREERS

@@ -1,23 +1,13 @@
 {% extends 'base.html' %} {% block content %}
 
-<section class="my-10 text-xl">
-  <div class="w-full flex flex-col h-full">
-    <div class="w-[inherit]">
-      <img
-        class="w-[inherit] h-[90vh] object-cover"
-        src="{{url_for('static', filename='media/IMG-20230718-WA0007.webp')}} "
-        alt="about_photo"
-      />
+<section class="mt-[80px] text-sm">
+  <div>      
       <h1
-        class="text-3xl font-mono uppercase font-bold underline text-center text-white absolute bg-green-700/50 p-2 ml-14 -mt-36 rounded-md"
+        class="text-3xl font-mono uppercase font-bold underline text-center text-white bg-green-700/50 p-2 "
       >
-        careers
+        Careers
       </h1>
-    </div>
-    <div
-      class="bg-white mx-14 relative -mt-12 text-xl p-5 text-justify justify-center items-center max-[490px]:text-left"
-    >
-      <p>
+      <p class="py-5 text-lg">
         Collaboration, Integrity and excellence are at the heart of our thriving
         culture. We believe in working together ,leveraging diverse talents and
         delivering exceptional results in the world of logistics. At Offshore
@@ -25,73 +15,30 @@
         individual brings, fostering an inclusive environment where everyone
         feels empowered to contribute their best.
       </p>
-    </div>
+    
   </div>
 </section>
 
 <section class="flex justify-center">
-  <div class="inline-grid grid-flow-row grid-cols-2 gap-10 max-md:grid-cols-1">
     <div class="flex justify-center items-center text-center p-3">
       <img
         class="w-[500px] h-[200px] object-cover"
-        src="{{url_for('static', filename='media/IMG-20230718-WA0005.webp')}}"
+        src="{{url_for('static', filename='media/IMG-20230718-WA0009.webp')}}"
       />
-      <div class="absolute bg-green-600/70 p-2 text-2xl font-medium shadow-2xl rounded-md">
+      <div class="absolute bg-green-600/70 p-2 text-2xl font-medium shadow-2xl rounded-md"> 
         Our Culture
       </div>
       <a
-        href="{{url_for('culture')}}"
+        href="{{url_for('PC')}}"
         class="absolute mt-[230px] font-medium text-xl hover:text-green-600">
         Read More</a
       >
     </div>
-    <div class="flex text-center justify-center items-center p-3">
-      <img
-        src="{{url_for('static', filename='media/IMG-20230718-WA0009.webp')}}"
-        class="h-[200px] w-[500px] object-cover"
-      />
-      <div class="absolute bg-green-600/70 p-2 text-2xl font-medium shadow-2xl rounded-md">
-        Diversity & Inclusion
-      </div>
-      <a
-        href="{{url_for('diversity')}}"
-        class="absolute mt-[230px] font-medium text-xl hover:text-green-600"
-        >Read More</a
-      >
-    </div>
-
-    <div class="flex justify-center items-center text-center p-3">
-      <img
-        src="{{url_for('static', filename='media/IMG-20230718-WA0008.webp')}}"
-        class="h-[200px] w-[500px] object-cover"
-      />
-      <div class="absolute bg-green-600/70 p-2 text-2xl font-medium shadow-2xl rounded-md">
-        Training & Development
-      </div>
-      <a
-        href="{{url_for('training')}}"
-        class="absolute mt-[230px] font-medium text-xl hover:text-green-600"
-        >Read More</a
-      >
-    </div>
-
-    <div class="flex justify-center items-center text-center p-3">
-      <img
-        src="{{url_for('static', filename='media/IMG-20230718-WA0006.webp')}}"
-        class="h-[200px] w-[500px] object-center"
-      />
-      <div class="absolute bg-green-600/70 p-2 text-2xl font-medium shadow-2xl rounded-md">
-        Job Application
-      </div>
-      <a
-        href="{{url_for('jobs')}}"
-        class="absolute mt-[230px] font-medium text-xl hover:text-green-600"
-        >Read More</a
-      >
-    </div>
+   
   </div>
 </section>
-<div class="flex justify-center py-3">
+<div class="flex justify-center py-3
+">
   <button
     class="border-2 border-solid border-red-700 p-4 mt-8 rounded-full font-medium text-lg shadow-xl"
   ><a href="https://www.linkedin.com/company/offshoregloballogisticsltd/jobs/" target="blank">

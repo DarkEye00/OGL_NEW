@@ -9,6 +9,11 @@ module.exports = {
           "80%": { transform: "scaleY(1.2)" },
           "100%": { transform: "scaleY(1)" },
         },
+        "open-answer": {
+          "0%": { transform: "scaleY(0)" },
+          "80%": { transform: "scaleY(1.2)" },
+          "100%": { transform: "scaleY(1)" },
+        },
         "zoom-in":{
           "0%": {
             transform: "scale(1)"/* Start at original size */
@@ -30,6 +35,8 @@ module.exports = {
         "open-menu": "open-menu 1s ease-in-out forwards",
         "zoom-in": "zoom-in 10s ease-in-out ",
         "spin-slow": "spin 15s linear infinite ease-in-out",
+        "open-answer": "open-answer 2s ease-in-out forwards",
+
       },
     },
   },

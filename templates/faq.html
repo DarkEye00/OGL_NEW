@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg my-20">
+        <h2 class="text-3xl font-bold text-green-700 text-center mb-6">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+            <details class="border border-green-300 rounded-lg p-4 bg-green-100 cursor-pointer transition-all duration-300 ease-in-out open:shadow-md">
+                <summary class="font-semibold text-green-800 focus:outline-none focus:ring-2 focus:ring-green-500">What services do you offer?</summary>
+                <p class="mt-2 text-green-700 animate-open-menu">We provide freight transportation, warehousing, supply chain management, and last-mile delivery ,customs clearance services tailored to your business needs.</p>
+            </details>
+            <details class="border border-green-300 rounded-lg p-4 bg-green-100 cursor-pointer transition-all duration-300 ease-in-out open:shadow-md">
+                <summary class="font-semibold text-green-800 focus:outline-none focus:ring-2 focus:ring-green-500">How can I track my shipment?</summary>
+                <p class="mt-2 text-green-700 transition-all duration-500 ease-in-out animate-open-menu">Our innovative system Navicus360, allows you to track your overseas shipments whilst getting timely shipment updates.</p>
+            </details>
+            <details class="border border-green-300 rounded-lg p-4 bg-green-100 cursor-pointer transition-all duration-300 ease-in-out open:shadow-md">
+                <summary class="font-semibold text-green-800 focus:outline-none focus:ring-2 focus:ring-green-500">What areas do you serve?</summary>
+                <p class="mt-2 text-green-700 transition-all duration-500 ease-in-out animate-open-menu">We operate nationwide with offices in Kenya, Uganda and Tanzania and offer international shipping through our global logistics partners.</p>
+            </details>
+            <details class="border border-green-300 rounded-lg p-4 bg-green-100 cursor-pointer transition-all duration-300 ease-in-out open:shadow-md">
+                <summary class="font-semibold text-green-800 focus:outline-none focus:ring-2 focus:ring-green-500">Do you offer same-day delivery?</summary>
+                <p class="mt-2 text-green-700 transition-all duration-500 ease-in-out animate-open-menu">Yes, we provide same-day and express delivery options for urgent shipments in select locations.</p>
+            </details>
+            <details class="border border-green-300 rounded-lg p-4 bg-green-100 cursor-pointer transition-all duration-300 ease-in-out open:shadow-md">
+                <summary class="font-semibold text-green-800 focus:outline-none focus:ring-2 focus:ring-green-500">How do I contact customer support?</summary>
+                <p class="mt-2 text-green-700 transition-all duration-500 ease-in-out animate-open-menu">You can reach our support team via phone, email, or live chat on our website. We're available 24/7 to assist you.</p>
+            </details>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

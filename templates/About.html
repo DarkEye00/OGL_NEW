@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-<section class="mt-20 text-sm">
+<section class="text-sm">
 
     <div class="w-[inherit]">
       <img
@@ -33,16 +33,16 @@
 </section>
 <section>
   
-  <div class="flex flex-col py-5 items-center md:flex-row justify-between bg-[rgb(244,244,244)] mx-10 " >
+  <div class="flex flex-col py-5 items-center md:flex-row justify-between mx-10 " >
   
-    <div class="w-[300px] shadow-xl"  data-aos="flip-down">
+    <div class="w-[300px] shadow-xl"  data-aos="flip-down" data-aos-duration="700">
       <h2 class="text-green-500 text-xl font-semibold p-2">Our Vision</h2>
       <img
       src="{{url_for('static', filename='media/sunset.webp')}}"
       class="md:h-[300px] max-md:object-cover bg-blue-500"
     />
     <p
-    class="p-5 flex justify-center items-center text-left max-[425px]:text-lg"
+    class="p-5 flex justify-center items-center text-left text-sm"
   >
     To be the premier supply chain solutions partner in East Africa committed
     to supply chain excellence while embodying the aspirations of our
@@ -51,14 +51,14 @@
     
     </div>
    
-    <div  class="w-[300px] shadow-xl" data-aos="flip-down">
+    <div  class="w-[300px] shadow-xl" data-aos="flip-down" data-aos-duration="1500">
       <h2 class="text-green-500 text-xl font-semibold p-2">Core Values</h2>
       <img
       src="{{url_for('static', filename='media/Diamond.webp')}}"
       class="md:h-[300px] max-md:object-cover"
     />
     <ul
-      class="ml-10 list-disc p-5 text-left"
+      class="ml-10 list-disc p-5 text-left text-s0"
     >
       <li>Agility</li>
       <li>Innovation</li>
@@ -68,14 +68,14 @@
     </ul>
     
     </div>
-    <div  class="w-[300px] shadow-xl" data-aos="flip-down">
+    <div  class="w-[300px] shadow-xl" data-aos="flip-down" data-aos-duration="3000">
       <h2 class="text-green-500 text-xl font-semibold p-2">Our Mission</h2>
       <img
       src="{{url_for('static',filename='media/dart.webp')}}"
       class="md:h-[300px] max-md:object-cover"
     />
     <p
-      class="p-5 flex justify-center items-center text-left max-[425px]:text-lg"
+      class="p-5 flex justify-center items-center text-left text-s0"
     >
       To provide innovative supply chain solutions while incorporating the goals
       of our stakeholders through creation of value.
