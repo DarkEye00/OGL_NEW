@@ -1,4 +1,11 @@
-{% extends 'base.html' %}
-{% block content %}
-    
-{% endblock %}
+<button id="open-sidebar" class="p-2 bg-green-600 text-white">☰</button>
+<div id="sidebar" class="fixed left-0 top-0 w-2/3 h-full bg-white shadow-lg hidden">
+    <a href="#" class="block p-4">Home</a>
+    <a href="#" class="block p-4">Services</a>
+    <a href="#" class="block p-4">Contact</a>
+</div>
+<script>
+    document.getElementById("open-sidebar").addEventListener("click", function() {
+        document.getElementById("sidebar").classList.toggle("hidden");
+    });
+</script>

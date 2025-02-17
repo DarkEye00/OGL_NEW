@@ -130,46 +130,33 @@
         </section>
 
         <!--Mobile menu-->
-        <section id="mobile-menu" class="absolute top-0 bg-green-500/90 w-full text-2xl font-medium flex-col justify-center origin-top animate-open-menu hidden">
+        <section id="mobile-menu" class="absolute top-0 bg-green-500/90 w-full text-2xl font-medium flex-col text-left origin-top animate-open-menu hidden">
             <button class="text-6xl self-end px-6 ">
                 &times;
             </button>
-            <nav class="flex flex-col min-h-screen items-center py-6 text-gray-600" aria-label="mobile-menu">
-                <a href="{{url_for('index')}}" class="w-full text-center hover:text-black py-3">
-                    HOME
-                </a>
-                <a href="{{url_for('About_Us')}}" class="w-full text-center hover:text-black py-3">
+           <nav class="flex flex-col min-h-screen text-left py-6 text-gray-800" aria-label="mobile-menu">
+            <!---->
+                <ul class="w-full text-left hover:text-black py-3 ml-4">
+                    SERVICES
+                    <ul class="flex flex-col ml-3 text-base text-left">
+                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('sea_freight')}}">Sea</a></li>
+                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('air_freight')}}">Air</a></li>
+                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('road_freight')}}">Transport & Distribution</a></li>
+                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('FC')}}">Warehousing & Fulfillment</a></li>
+                    </ul>
+                </ul>
+                <a href="{{url_for('About_Us')}}" class="w-full hover:text-black py-3 ml-4">
                     ABOUT US
                 </a>
-                
-            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="w-full text-center hover:text-black py-3" type="button">SERVICES <i class="fa-solid fa-caret-down" style="color: #000000;"></i>
-                </button>
-                
-                <!-- Dropdown menu -->
-                <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-                    <ul class="text-sm text-gray-700 dark:text-gray-200 space-y-4 p-2"  aria-labelledby="dropdownHoverButton">
-                        <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline hover:text-green-500 ease-in-out"><a href="{{url_for('sea_freight')}}">Sea</a></li>
-                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('air_freight')}}">Air</a></li>
-                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('road_freight')}}">Transport & Distribution</a></li>
-                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('FC')}}">Warehousing & Fulfillment</a></li>
-                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('project_cargo')}}">Project Logistics</a></li>
-                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">Customs Clearance</li>
-                        <li class="hover:text-green-500 hover:font-bold hover:transition hover:-translate-y-1  hover:underline ease-in-out">Courier                                        Services</li>
-                       
-                    </ul>
-                </div>
     
-                <a href="{{url_for('Sustainability')}}" class="w-full text-center hover:text-black py-3">
+                <a href="{{url_for('Sustainability')}}" class="w-full hover:text-black py-3 ml-4">
                     SUSTAINABILITY
                 </a>
-                <a href="#" class="w-full text-center hover:text-black py-3">
-                    NEWS
-                </a>
-                <a href="{{url_for('Careers')}}" class="w-full text-center hover:text-black py-3">
+               
+                <a href="{{url_for('Careers')}}" class="w-full hover:text-black py-3 ml-4">
                     CAREERS
                 </a>
-                <a href="#" class="w-full text-center hover:text-black py-3">
-                    SPEAK UP
+                <a href="{{url_for('PC')}}" class="w-full hover:text-black py-3 ml-4">People & Culture
                 </a>
 
             </nav>

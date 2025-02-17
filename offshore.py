@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 #app.register_blueprint(services_blueprint, url_prefix='/Services')
 
-#freezer = Freezer(app)
+freezer = Freezer(app)
 app.secret_key = '0ff$hor3 k3y'
 
 @app.errorhandler(404)
@@ -94,4 +94,4 @@ def kebs():
     return render_template ("faq.html")
 
 if __name__ == ("__main__"):
-  app.run(debug=True)   
+  app.run(debug=True) 
