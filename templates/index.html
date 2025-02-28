@@ -10,7 +10,7 @@
         <meta name="keywords" content="Logistics company in Uganda">
         <meta name="keywords" content="Logistics company in Tanzania">
         <meta name="keywords" content="Logistics solutions in  Nairobi">
-        <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='media/offsh_icon.ico') }}" />
+        <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='media/offsh_icon.ico') }}" />
         <script src="https://kit.fontawesome.com/0603f90087.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
@@ -130,15 +130,15 @@
         </section>
 
         <!--Mobile menu-->
-        <section id="mobile-menu" class="absolute top-0 bg-green-500/90 w-full text-2xl font-medium flex-col text-left origin-top animate-open-menu hidden">
+        <section id="mobile-menu" class="absolute top-0 bg-green-500/90 w-full text- xl font-medium flex-col text-left origin-top animate-open-menu hidden">
             <button class="text-6xl self-end px-6 ">
                 &times;
             </button>
            <nav class="flex flex-col min-h-screen text-left py-6 text-gray-800" aria-label="mobile-menu">
             <!---->
                 <ul class="w-full text-left hover:text-black py-3 ml-4">
-                    SERVICES
-                    <ul class="flex flex-col ml-3 text-base text-left">
+                    Services
+                    <ul class="flex flex-col ml-3 text-base text-left text-gray-700">
                         <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('sea_freight')}}">Sea</a></li>
                         <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('air_freight')}}">Air</a></li>
                         <li class="hover:font-bold hover:transition hover:-translate-y-1 hover:underline ease-in-out"><a href="{{url_for('road_freight')}}">Transport & Distribution</a></li>
@@ -146,17 +146,21 @@
                     </ul>
                 </ul>
                 <a href="{{url_for('About_Us')}}" class="w-full hover:text-black py-3 ml-4">
-                    ABOUT US
+                    About Us
                 </a>
     
                 <a href="{{url_for('Sustainability')}}" class="w-full hover:text-black py-3 ml-4">
-                    SUSTAINABILITY
+                    Sustainability
                 </a>
                
-                <a href="{{url_for('Careers')}}" class="w-full hover:text-black py-3 ml-4">
-                    CAREERS
-                </a>
                 <a href="{{url_for('PC')}}" class="w-full hover:text-black py-3 ml-4">People & Culture
+                </a>
+                
+                <a href="{{url_for('Careers')}}" class="w-full hover:text-black py-3 ml-4">
+                    Careers
+                </a>
+                <a href="{{url_for('index')}}" class="w-full hover:text-black py-3 ml-4">
+                    Home
                 </a>
 
             </nav>
@@ -248,12 +252,46 @@
                 <div class="p-14">
                     <h1 class="text-green-500 font-semibold text-2xl md:text-3xl">What is Navicus360 ?</h1>
                     
-                    <div class="flex flex-col-reverse justify-center items-center py-10 text-base font-normal md:flex-row-reverse">
-                        <img class="w-[400px] h-[400px] rounded-full shadow-2xl hidden md:block" src="{{url_for('static', filename='media/Navi.webp')}}"  />
+                    <div class="flex flex-col-reverse justify-center items-center py-10 text-base text-justify font-normal md:flex-row">
+                        <img class="w-[300px] h-[300px] rounded-full shadow-2xl hidden md:block" src="{{url_for('static', filename='media/Navi.webp')}}"  />
                     <p>
                         Our innovative system, Navicus360, revolutionizes your shipping experience by providing unparalleled visibility into your products throughout the entire shipping process. With Navicus360, you can effortlessly track their shipments in real-time, receiving instant updates on the movement and location of their goods. This ensures complete transparency and peace of mind, enabling businesses and individuals to stay informed every step of the way. Whether it's knowing the exact transit location or receiving alerts on estimated delivery times, Navicus360 empowers our customers with the information they need to stay ahead.</p>
                     </div>
                 </div>
+            </section>
+            <section class="bg-green-700 w-full h-[500px]">
+                <div class="w-[inherit] h-[inherit] flex flex-row-reverse justify-between">
+                    <div>
+                        <img class="h-[500px] w-full py-4 px-10" src="{{url_for('static', filename='media/serve.webp')}}" alt="">
+                    </div>
+                    <div class="mx-10 py-4">
+                        <h2 class="text-center text-white text-xl font-semibold">Industries We Serve</h2>
+                        <p class="text-2xl text-white font-semibold">Tailored<br> Solutions for <br>Diverse Sectors</p>
+                        <div class="grid grid-flow-col grid-cols-2 space-x-10 mt-5">
+                          <div class="space-y-6">  
+                            <div>
+                                <img class="w-28 h-28 rounded-md" src="{{url_for('static', filename='media/tech.png')}}" alt="">
+                            <p class="text-white font-semibold">Technology & Innovation</p>
+                            </div>
+                            <div>
+                                <img class="w-28 h-28 rounded-md" src="{{url_for('static', filename='media/Medicine.svg')}}" alt="">
+                            <p class="text-white font-semibold">Medicine & Healthcare</p>
+                            </div>
+                          </div>
+                          <div class="space-y-6"> 
+                            <div>
+                                <img class="w-28 h-28 rounded-md" src="{{url_for('static', filename='media/beauty.png')}}" alt="">
+                            <p class="text-white font-semibold">Beauty Products</p>
+                            </div>
+                            <div>
+                                <img class="w-28 h-28 rounded-md" src="{{url_for('static', filename='media/clean.png')}}" alt="">
+                            <p class="text-white font-semibold">Cleaning & Detergents</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
                     
                 <section class="bg-[#e0dddd] text-sm md:text-lg">
